@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nome": "Câmera Fujifilm Instax Mini 12",
+    "categoria": "Câmeras Instantâneas",
+    "descricao": "Compacta e divertida, ideal para registrar momentos com fotos imediatas no formato mini.",
+    "emoji": "📷",
+    "destaque": true
+  },
+  {
+    "id": 2,
+    "nome": "Câmera Analógica Olympus Trip 35",
+    "categoria": "Câmeras Analógicas",
+    "descricao": "Clássico da fotografia analógica com exposição automática. Perfeita para iniciantes no analógico.",
+    "emoji": "🎞️",
+    "destaque": true
+  },
+  {
+    "id": 3,
+    "nome": "Filme Kodak Ultramax 400 (36 poses)",
+    "categoria": "Filmes Fotográficos",
+    "descricao": "Filme colorido de 35mm com alta sensibilidade. Cores vibrantes e excelente desempenho em luz natural.",
+    "emoji": "🎬",
+    "destaque": false
+  },
+  {
+    "id": 4,
+    "nome": "Filme Ilford HP5 Plus 400 P&B",
+    "categoria": "Filmes Fotográficos",
+    "descricao": "Um dos filmes preto e branco mais versáteis do mercado. Excelente latitude de exposição.",
+    "emoji": "🎞️",
+    "destaque": false
+  },
+  {
+    "id": 5,
+    "nome": "Câmera Fujifilm X-T30 II",
+    "categoria": "Câmeras Digitais",
+    "descricao": "Mirrorless com sensor APS-C de 26.1MP e processador X-Processor 4. Simulações de filme Fujifilm.",
+    "emoji": "📸",
+    "destaque": true
+  },
+  {
+    "id": 6,
+    "nome": "Polaroid Now+ Generation 2",
+    "categoria": "Câmeras Instantâneas",
+    "descricao": "Câmera Polaroid moderna com 5 modos de lente via app. Formato i-Type, estilo vintage retrô.",
+    "emoji": "🌈",
+    "destaque": true
+  },
+  {
+    "id": 7,
+    "nome": "Álbum de Fotos 10x15 (200 fotos)",
+    "categoria": "Acessórios",
+    "descricao": "Álbum clássico com capacidade para 200 fotos no formato 10x15. Capa dura e páginas de papel vegetal.",
+    "emoji": "📚",
+    "destaque": false
+  },
+  {
+    "id": 8,
+    "nome": "Relógio Casio Vintage A168W",
+    "categoria": "Relógios",
+    "descricao": "Ícone do estilo retrô dos anos 80. Display digital com iluminação e pulseira de aço.",
+    "emoji": "⌚",
+    "destaque": false
+  },
+  {
+    "id": 9,
+    "nome": "Kit Presente Fotografia Analógica",
+    "categoria": "Presentes",
+    "descricao": "Kit especial com 1 câmera descartável, 1 filme 35mm e revelação inclusa. O presente perfeito.",
+    "emoji": "🎁",
+    "destaque": true
+  },
+  {
+    "id": 10,
+    "nome": "Câmera Canon EOS Rebel SL3",
+    "categoria": "Câmeras Digitais",
+    "descricao": "DSLR compacta com sensor de 24.1MP e vídeo 4K. Ideal para quem está começando na fotografia.",
+    "emoji": "📷",
+    "destaque": false
+  },
+  {
+    "id": 11,
+    "nome": "Filtro UV 58mm",
+    "categoria": "Acessórios",
+    "descricao": "Filtro UV para proteção da lente. Reduz névoa e clareia o céu. Compatível com lentes de 58mm.",
+    "emoji": "🔭",
+    "destaque": false
+  },
+  {
+    "id": 12,
+    "nome": "Tripé Compacto Joby GorillaPod",
+    "categoria": "Acessórios",
+    "descricao": "Tripé flexível com pernas articuladas que se adaptam a qualquer superfície. Suporta até 1kg.",
+    "emoji": "🦒",
+    "destaque": false
+  }
+]

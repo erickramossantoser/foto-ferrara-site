@@ -1,0 +1,130 @@
+.contato__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Info cards */
+.contato__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 1.75rem;
+}
+.info-card {
+  display: flex;
+  gap: 1.1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--warm-white);
+  transition: background .2s;
+}
+.info-card:not(:last-child) { border-bottom: 1px solid var(--border); }
+.info-card:hover { background: var(--cream); }
+
+.info-card__icon {
+  width: 42px; height: 42px;
+  background: rgba(212,130,42,.1);
+  border-radius: var(--radius);
+  display: grid;
+  place-items: center;
+  color: var(--amber);
+  flex-shrink: 0;
+  margin-top: .1rem;
+}
+.info-card__title {
+  font-weight: 500;
+  font-size: .88rem;
+  color: var(--ink);
+  margin-bottom: .35rem;
+}
+.info-card__line {
+  font-size: .85rem;
+  color: var(--ink-light);
+  line-height: 1.55;
+}
+.info-card__action {
+  font-size: .82rem;
+  color: var(--amber);
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: .4rem;
+  font-family: inherit;
+  transition: color .2s;
+}
+.info-card__action:hover { color: var(--amber-dark); }
+
+/* WhatsApp CTA strip */
+.contato__wa {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: #f0faf4;
+  border: 1px solid #b7e8c8;
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  flex-wrap: wrap;
+}
+.contato__wa-icon {
+  width: 50px; height: 50px;
+  background: #25D366;
+  color: #fff;
+  border-radius: var(--radius-lg);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.contato__wa-title {
+  font-weight: 500;
+  font-size: .92rem;
+  color: var(--ink);
+}
+.contato__wa-sub {
+  font-size: .82rem;
+  color: var(--sage);
+}
+.contato__wa .btn { margin-left: auto; flex-shrink: 0; font-size: .85rem; }
+
+/* Mapa */
+.contato__mapa-wrap {
+  position: sticky;
+  top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+.contato__mapa-header {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .82rem;
+  color: var(--sepia);
+}
+.contato__mapa {
+  height: 420px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+.contato__mapa-link {
+  font-size: .85rem;
+  padding: .65rem 1.25rem;
+  justify-content: center;
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .contato__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .contato__mapa-wrap { position: static; }
+  .contato__mapa { height: 320px; }
+}
+@media (max-width: 560px) {
+  .contato__wa .btn { margin-left: 0; width: 100%; justify-content: center; }
+}

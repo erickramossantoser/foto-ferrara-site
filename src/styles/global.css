@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+/* ─── Design Tokens ─────────────────────────────────────── */
+:root {
+  --cream:       #F5F0E8;
+  --warm-white:  #FDFAF5;
+  --ink:         #1A1410;
+  --ink-light:   #3D2F25;
+  --sepia:       #8B6543;
+  --sepia-light: #C4A882;
+  --amber:       #D4822A;
+  --amber-dark:  #B36920;
+  --sage:        #5A6B52;
+  --red-dark:    #8B2E2E;
+  --border:      rgba(139, 101, 67, 0.18);
+  --shadow-sm:   0 2px 12px rgba(26,20,16,.06);
+  --shadow-md:   0 8px 32px rgba(26,20,16,.10);
+  --shadow-lg:   0 20px 60px rgba(26,20,16,.15);
+  --radius:      4px;
+  --radius-lg:   12px;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+  --transition:  all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── Reset ─────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-body);
+  background: var(--warm-white);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+ul { list-style: none; }
+
+/* ─── Typography ─────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  font-weight: 600;
+}
+.section-label {
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--sepia);
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--ink);
+  margin-top: .4rem;
+  margin-bottom: 1rem;
+}
+.section-body {
+  font-size: 1.05rem;
+  color: var(--ink-light);
+  max-width: 54ch;
+  line-height: 1.75;
+}
+
+/* ─── Buttons ────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .85rem 1.75rem;
+  border-radius: var(--radius);
+  font-size: .95rem;
+  font-weight: 500;
+  letter-spacing: .02em;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--amber);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(212,130,42,.35);
+}
+.btn-primary:hover {
+  background: var(--amber-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212,130,42,.4);
+}
+.btn-outline {
+  border: 1.5px solid var(--sepia);
+  color: var(--ink-light);
+}
+.hero .btn-outline {
+  color: #fff;
+  border-color: rgba(255,255,255,.65);
+}
+.hero .btn-outline:hover {
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+.btn-outline:hover {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(37,211,102,.3);
+}
+.btn-whatsapp:hover {
+  background: #1ebe5a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37,211,102,.4);
+}
+
+/* ─── Layout ─────────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.section { padding: 5rem 0; }
+.section-header { margin-bottom: 3rem; }
+.section-header.centered { text-align: center; }
+.section-header.centered .section-body { margin: 0 auto; }
+
+/* ─── Divider ─────────────────────────────────────────────── */
+.ornament {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: .6rem;
+}
+.ornament::before, .ornament::after {
+  content: '';
+  height: 1px;
+  flex: 1;
+  background: var(--border);
+}
+.ornament-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--sepia-light);
+}
+
+/* ─── Fade-in animation ──────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp .65s ease both; }
+.fade-up-1 { animation-delay: .1s; }
+.fade-up-2 { animation-delay: .2s; }
+.fade-up-3 { animation-delay: .3s; }
+.fade-up-4 { animation-delay: .4s; }
+
+/* ─── Utility ─────────────────────────────────────────────── */
+.text-amber  { color: var(--amber); }
+.text-sepia  { color: var(--sepia); }
+.bg-cream    { background: var(--cream); }
+.italic      { font-style: italic; }
+
+/* ─── Responsive ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .section { padding: 3.5rem 0; }
+  .container { padding: 0 1.25rem; }
+}
