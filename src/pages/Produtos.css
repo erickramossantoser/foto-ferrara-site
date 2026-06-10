@@ -132,6 +132,18 @@
 .produto-card--destaque {
   border-color: color-mix(in srgb, var(--produto-cor, var(--amber)) 35%, var(--border));
 }
+.produto-card__badge {
+  font-size: .6rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  background: color-mix(in srgb, var(--produto-cor, var(--amber)) 88%, #fff);
+  color: #fff;
+  padding: .18rem .5rem;
+  border-radius: 100px;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+}
 .produto-card__media {
   width: 100%;
   height: 112px;
@@ -159,6 +171,13 @@
 }
 
 .produto-card__info { flex: 1; display: flex; flex-direction: column; gap: .42rem; }
+.produto-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  min-height: 18px;
+}
 .produto-card__cat {
   font-size: .68rem;
   letter-spacing: .12em;
@@ -206,4 +225,5 @@
   .produtos__busca { max-width: none; }
   .produtos__filtros { padding: .85rem; }
   .produto-card__media { height: 150px; }
+  .produto-card__meta { flex-wrap: wrap; }
 }
