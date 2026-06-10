@@ -46,6 +46,19 @@
   text-transform: uppercase;
   margin-top: .25rem;
 }
+.servico-card__media {
+  height: 190px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: color-mix(in srgb, var(--cor) 8%, var(--cream));
+  border: 1px solid color-mix(in srgb, var(--cor) 18%, var(--border));
+}
+.servico-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .servico-card__desc {
   font-size: .92rem;
   color: var(--ink-light);
@@ -104,4 +117,8 @@
 
 @media (max-width: 768px) {
   .servicos__grid { grid-template-columns: 1fr; }
+  .servico-card__media { height: 220px; }
+}
+@media (max-width: 560px) {
+  .servico-card__media { height: 180px; }
 }

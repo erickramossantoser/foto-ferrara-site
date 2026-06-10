@@ -16,6 +16,7 @@ const servicos = [
       'A partir de fotos digitais',
     ],
     whatsapp: 'Olá! Gostaria de revelar fotos. Quais formatos vocês trabalham?',
+    imagem: '/servicos/revelacao-fotos.png',
     cor: '#D4822A',
   },
   {
@@ -31,6 +32,7 @@ const servicos = [
       'Arquivos em alta resolução',
     ],
     whatsapp: 'Olá! Quero revelar um filme analógico. Como é o processo?',
+    imagem: '/servicos/revelacao-filmes.png',
     cor: '#5A6B52',
   },
   {
@@ -46,6 +48,7 @@ const servicos = [
       'Consultoria especializada na escolha',
     ],
     whatsapp: 'Olá! Tenho interesse em comprar uma câmera. Vocês podem me ajudar na escolha?',
+    imagem: '/servicos/venda-cameras.png',
     cor: '#8B2E2E',
   },
   {
@@ -61,6 +64,7 @@ const servicos = [
       'Álbuns e porta-retratos',
     ],
     whatsapp: 'Olá! Estou procurando um presente relacionado à fotografia. Vocês podem me ajudar?',
+    imagem: '/servicos/produtos-presentes.png',
     cor: '#3D2F25',
   },
 ];
@@ -96,6 +100,10 @@ export default function Servicos() {
                     <h2 className="servico-card__title">{s.titulo}</h2>
                     <p className="servico-card__sub">{s.subtitulo}</p>
                   </div>
+                </div>
+
+                <div className="servico-card__media">
+                  <img src={s.imagem} alt={s.titulo} loading="lazy" />
                 </div>
 
                 <p className="servico-card__desc">{s.desc}</p>
