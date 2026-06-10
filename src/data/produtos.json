@@ -5,6 +5,7 @@
     "categoria": "Câmeras",
     "descricao": "Câmera instantânea perfeita para registrar momentos especiais e imprimir fotos na hora.",
     "emoji": "📸",
+    "imagem": "https://static.bhphoto.com/images/images500x500/1679575301_1753963.jpg",
     "destaque": true
   },
   {
@@ -13,6 +14,7 @@
     "categoria": "Câmeras",
     "descricao": "Câmera instantânea charmosa e prática para criar lembranças únicas.",
     "emoji": "📸",
+    "imagem": "https://static.bhphoto.com/images/images500x500/1530095124_909237.jpg",
     "destaque": true
   },
   {
@@ -21,6 +23,7 @@
     "categoria": "Câmeras",
     "descricao": "Câmera compacta para fotos e vídeos com visual moderno e fácil de usar.",
     "emoji": "📷",
+    "imagem": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -29,6 +32,7 @@
     "categoria": "Filmes",
     "descricao": "Filme instantâneo compatível com câmeras Instax Mini.",
     "emoji": "🎞️",
+    "imagem": "https://static.bhphoto.com/images/images500x500/fujifilm_16437396_instax_mini_film_twin_1448383189_1171821.jpg",
     "destaque": true
   },
   {
@@ -37,6 +41,7 @@
     "categoria": "Filmes",
     "descricao": "Filme analógico tradicional para câmeras 35mm.",
     "emoji": "🎞️",
+    "imagem": "https://images.unsplash.com/photo-1541966712669-03c3a01172bc?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -45,6 +50,7 @@
     "categoria": "Personalizados",
     "descricao": "Chaveiro em formato de filme analógico com fotos personalizadas.",
     "emoji": "🎬",
+    "imagem": "https://images.unsplash.com/photo-1541966712669-03c3a01172bc?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -53,6 +59,7 @@
     "categoria": "Personalizados",
     "descricao": "Chaveiro com fotos personalizadas e opção de adicionar música via Spotify.",
     "emoji": "🎬",
+    "imagem": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -61,6 +68,7 @@
     "categoria": "Personalizados",
     "descricao": "Caneca personalizada com foto, frase ou arte especial.",
     "emoji": "🎁",
+    "imagem": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -69,6 +77,7 @@
     "categoria": "Personalizados",
     "descricao": "Caneca que revela a imagem personalizada ao receber líquido quente.",
     "emoji": "🎁",
+    "imagem": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -77,6 +86,7 @@
     "categoria": "Personalizados",
     "descricao": "Almofada personalizada com foto ou mensagem especial para presentear.",
     "emoji": "🎁",
+    "imagem": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -85,6 +95,7 @@
     "categoria": "Quadros",
     "descricao": "Porta-retrato para eternizar fotos e momentos especiais.",
     "emoji": "🖼️",
+    "imagem": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -93,6 +104,7 @@
     "categoria": "Quadros",
     "descricao": "Quadro decorativo para fotos, lembranças e presentes especiais.",
     "emoji": "🖼️",
+    "imagem": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=80",
     "destaque": false
   },
   {
@@ -101,6 +113,7 @@
     "categoria": "Quadros",
     "descricao": "Quadro de vidro elegante para fotos e decoração.",
     "emoji": "🖼️",
+    "imagem": "https://www.custompictureframes.com/media/catalog/product/cache/f1e6f13c6b9a12b551326d1a7ff4587b/w/h/white-matted-instagram-photo-frame-9-photos.jpg",
     "destaque": false
   },
   {
@@ -109,6 +122,7 @@
     "categoria": "Relógios",
     "descricao": "Relógio feminino elegante, ideal para presentear em datas especiais.",
     "emoji": "⌚",
+    "imagem": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -117,6 +131,7 @@
     "categoria": "Relógios",
     "descricao": "Relógio Champion com design sofisticado e acabamento premium.",
     "emoji": "⌚",
+    "imagem": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -125,6 +140,7 @@
     "categoria": "Relógios",
     "descricao": "Relógio Condor moderno e elegante para todos os momentos.",
     "emoji": "⌚",
+    "imagem": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -133,6 +149,7 @@
     "categoria": "Relógios",
     "descricao": "Kit presente com relógio e acessórios, ideal para surpreender.",
     "emoji": "⌚",
+    "imagem": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -141,6 +158,7 @@
     "categoria": "Relógios",
     "descricao": "Smartwatch moderno com design esportivo e funções inteligentes.",
     "emoji": "⌚",
+    "imagem": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -149,6 +167,7 @@
     "categoria": "Kits",
     "descricao": "Kit especial com produtos personalizados para presentear quem você ama.",
     "emoji": "🎁",
+    "imagem": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   },
   {
@@ -157,6 +176,7 @@
     "categoria": "Kits",
     "descricao": "Cesta personalizada com opções de câmera, filme, quadro, almofada e outros presentes.",
     "emoji": "🎁",
+    "imagem": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=900&q=80",
     "destaque": true
   }
 ]

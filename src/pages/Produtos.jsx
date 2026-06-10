@@ -110,10 +110,18 @@ export default function Produtos() {
                 >
                   {p.destaque && <span className="produto-card__badge">Destaque</span>}
 
-                  <div
-                    className="produto-card__emoji"
-                    style={{ background: `${emojiColors[p.emoji] || '#8B6543'}18` }}
-                  >
+                  <div className="produto-card__media">
+                    {p.imagem && (
+                      <img
+                        src={p.imagem}
+                        alt={p.nome}
+                        loading="lazy"
+                        onError={(e) => {
+                          e.currentTarget.parentElement?.classList.add('produto-card__media--fallback');
+                          e.currentTarget.remove();
+                        }}
+                      />
+                    )}
                     <span>{p.emoji}</span>
                   </div>
 
