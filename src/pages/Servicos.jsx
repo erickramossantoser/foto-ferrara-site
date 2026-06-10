@@ -16,7 +16,7 @@ const servicos = [
       'A partir de fotos digitais',
     ],
     whatsapp: 'Olá! Gostaria de revelar fotos. Quais formatos vocês trabalham?',
-    imagem: '/servicos/revelacao-fotos.png',
+    imagem: '/servicos/revelacao-fotos.webp',
     cor: '#D4822A',
   },
   {
@@ -32,7 +32,7 @@ const servicos = [
       'Arquivos em alta resolução',
     ],
     whatsapp: 'Olá! Quero revelar um filme analógico. Como é o processo?',
-    imagem: '/servicos/revelacao-filmes.png',
+    imagem: '/servicos/revelacao-filmes.webp',
     cor: '#5A6B52',
   },
   {
@@ -48,7 +48,7 @@ const servicos = [
       'Consultoria especializada na escolha',
     ],
     whatsapp: 'Olá! Tenho interesse em comprar uma câmera. Vocês podem me ajudar na escolha?',
-    imagem: '/servicos/venda-cameras.png',
+    imagem: '/servicos/venda-cameras.webp',
     cor: '#8B2E2E',
   },
   {
@@ -64,7 +64,7 @@ const servicos = [
       'Álbuns e porta-retratos',
     ],
     whatsapp: 'Olá! Estou procurando um presente relacionado à fotografia. Vocês podem me ajudar?',
-    imagem: '/servicos/produtos-presentes.png',
+    imagem: '/servicos/produtos-presentes.webp',
     cor: '#3D2F25',
   },
 ];
