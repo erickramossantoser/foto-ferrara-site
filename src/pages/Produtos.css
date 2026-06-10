@@ -133,8 +133,6 @@
   border-color: color-mix(in srgb, var(--produto-cor, var(--amber)) 35%, var(--border));
 }
 .produto-card__badge {
-  position: absolute;
-  top: 1rem; right: 1rem;
   font-size: .62rem;
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -143,11 +141,13 @@
   padding: .18rem .55rem;
   border-radius: 100px;
   font-weight: 500;
+  flex-shrink: 0;
 }
 
 .produto-card__media {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 5 / 3;
+  max-height: 136px;
   border-radius: var(--radius-lg);
   display: grid;
   place-items: center;
@@ -160,8 +160,9 @@
 .produto-card__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  padding: .35rem;
 }
 .produto-card__media img + span {
   display: none;
@@ -170,7 +171,14 @@
   display: block;
 }
 
-.produto-card__info { flex: 1; display: flex; flex-direction: column; gap: .4rem; }
+.produto-card__info { flex: 1; display: flex; flex-direction: column; gap: .45rem; }
+.produto-card__meta {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  justify-content: space-between;
+  min-height: 20px;
+}
 .produto-card__cat {
   font-size: .68rem;
   letter-spacing: .12em;

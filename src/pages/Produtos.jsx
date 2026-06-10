@@ -108,8 +108,6 @@ export default function Produtos() {
                   className={`produto-card${p.destaque ? ' produto-card--destaque' : ''}`}
                   style={{ '--produto-cor': emojiColors[p.emoji] || '#8B6543' }}
                 >
-                  {p.destaque && <span className="produto-card__badge">Destaque</span>}
-
                   <div className="produto-card__media">
                     {p.imagem && (
                       <img
@@ -126,7 +124,10 @@ export default function Produtos() {
                   </div>
 
                   <div className="produto-card__info">
-                    <p className="produto-card__cat">{p.categoria}</p>
+                    <div className="produto-card__meta">
+                      <p className="produto-card__cat">{p.categoria}</p>
+                      {p.destaque && <span className="produto-card__badge">Destaque</span>}
+                    </div>
                     <h3 className="produto-card__nome">{p.nome}</h3>
                     <p className="produto-card__desc">{p.descricao}</p>
                   </div>
