@@ -124,10 +124,7 @@ export default function Produtos() {
                   </div>
 
                   <div className="produto-card__info">
-                    <div className="produto-card__meta">
-                      <p className="produto-card__cat">{p.categoria}</p>
-                      {p.destaque && <span className="produto-card__badge">Destaque</span>}
-                    </div>
+                    <p className="produto-card__cat">{p.categoria}</p>
                     <h3 className="produto-card__nome">{p.nome}</h3>
                     <p className="produto-card__desc">{p.descricao}</p>
                   </div>
