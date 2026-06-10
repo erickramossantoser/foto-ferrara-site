@@ -21,7 +21,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="footer__tagline">
-              Revelamos memórias há mais de três décadas no coração de São Paulo.
+              Revelamos memórias há mais de 26 anos no coração de São Paulo.
             </p>
           </div>
 

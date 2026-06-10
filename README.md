@@ -1,16 +1,44 @@
-# React + Vite
+# Foto Ferrara
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site institucional da Foto Ferrara, loja e laboratório fotográfico no centro de São Paulo.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- React Router
+- Lucide React
+- CSS modular por página/componente
 
-## React Compiler
+## Como rodar localmente
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run dev      # ambiente local
+npm run lint     # validação de código
+npm run build    # build de produção
+npm run preview  # preview do build
+```
+
+## Deploy na Vercel
+
+O projeto já inclui `vercel.json` com rewrite para SPA. Na Vercel, use:
+
+- Framework Preset: Vite
+- Build Command: `npm run build`
+- Output Directory: `dist`
+
+## Conteúdo principal
+
+- `src/pages/Home.jsx`: página inicial
+- `src/pages/Sobre.jsx`: história da empresa
+- `src/pages/Servicos.jsx`: serviços oferecidos
+- `src/pages/Produtos.jsx`: catálogo com filtros
+- `src/pages/Contato.jsx`: endereço, telefone, WhatsApp e mapa
+- `src/data/produtos.json`: produtos exibidos no catálogo

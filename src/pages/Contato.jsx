@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, MessageCircle, Mail } from 'lucide-react';
+import { Camera, MapPin, Phone, Clock, MessageCircle } from 'lucide-react';
 import { openWhatsApp } from '../hooks/useWhatsApp';
 import './Contato.css';
 
@@ -21,7 +21,7 @@ const infos = [
     linhas: ['Segunda a Sexta: 9h às 18h', 'Sábado: 9h às 14h', 'Domingo: Fechado'],
   },
   {
-    icon: <span>📸</span>,
+    icon: <Camera size={22} strokeWidth={1.5} />,
     titulo: 'Redes Sociais',
     linhas: ['@fotoferrara', 'Siga-nos no Instagram'],
   },

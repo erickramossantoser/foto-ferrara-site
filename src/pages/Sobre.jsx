@@ -10,9 +10,9 @@ const valores = [
 
 const linha_do_tempo = [
   { ano: '2000', evento: 'Fundação da Foto Ferrara pelo Sr. Renato Ferrara, na Rua Dom José de Barros.' },
-  { ano: '1995', evento: 'Expansão do espaço físico e início da venda de câmeras fotográficas.' },
-  { ano: '2005', evento: 'Adaptação à era digital: revelação digital, scanners e impressão de qualidade.' },
-  { ano: '2015', evento: 'Retorno ao analógico: revelação de filmes volta a crescer entre jovens.' },
+  { ano: '2005', evento: 'Expansão do espaço físico e início da venda de câmeras fotográficas.' },
+  { ano: '2010', evento: 'Adaptação à era digital: revelação digital, scanners e impressão de qualidade.' },
+  { ano: '2018', evento: 'Retorno ao analógico: revelação de filmes volta a crescer entre jovens.' },
   { ano: 'Hoje', evento: 'Referência em revelação analógica e digital no centro de São Paulo.' },
 ];
 
@@ -36,7 +36,7 @@ export default function Sobre() {
           <div className="sobre__historia-text">
             <div className="ornament"><div className="ornament-dot" /></div>
             <p className="section-label">Nossa história</p>
-            <h2 className="section-title">Mais de 24 anos<br />revelando memórias</h2>
+            <h2 className="section-title">Mais de 26 anos<br />revelando memórias</h2>
             <p className="section-body" style={{ marginBottom: '1.25rem' }}>
               A Foto Ferrara nasceu em 2000, quando o Sr. Renato Ferrara abriu as portas
               de uma pequena loja no coração de São Paulo, movido por sua paixão pela fotografia.
@@ -52,7 +52,7 @@ export default function Sobre() {
 
             <div className="sobre__badges">
               <div className="sobre__badge">
-                <strong>+35</strong>
+                <strong>+26</strong>
                 <span>anos de história</span>
               </div>
               <div className="sobre__badge">

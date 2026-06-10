@@ -1,98 +1,162 @@
 [
   {
     "id": 1,
-    "nome": "Câmera Fujifilm Instax Mini 12",
-    "categoria": "Câmeras Instantâneas",
-    "descricao": "Compacta e divertida, ideal para registrar momentos com fotos imediatas no formato mini.",
-    "emoji": "📷",
-    "destaque": true
-  },
-  {
-    "id": 2,
-    "nome": "Câmera Analógica Olympus Trip 35",
-    "categoria": "Câmeras Analógicas",
-    "descricao": "Clássico da fotografia analógica com exposição automática. Perfeita para iniciantes no analógico.",
-    "emoji": "🎞️",
-    "destaque": true
-  },
-  {
-    "id": 3,
-    "nome": "Filme Kodak Ultramax 400 (36 poses)",
-    "categoria": "Filmes Fotográficos",
-    "descricao": "Filme colorido de 35mm com alta sensibilidade. Cores vibrantes e excelente desempenho em luz natural.",
-    "emoji": "🎬",
-    "destaque": false
-  },
-  {
-    "id": 4,
-    "nome": "Filme Ilford HP5 Plus 400 P&B",
-    "categoria": "Filmes Fotográficos",
-    "descricao": "Um dos filmes preto e branco mais versáteis do mercado. Excelente latitude de exposição.",
-    "emoji": "🎞️",
-    "destaque": false
-  },
-  {
-    "id": 5,
-    "nome": "Câmera Fujifilm X-T30 II",
-    "categoria": "Câmeras Digitais",
-    "descricao": "Mirrorless com sensor APS-C de 26.1MP e processador X-Processor 4. Simulações de filme Fujifilm.",
+    "nome": "Instax Mini 12",
+    "categoria": "Câmeras",
+    "descricao": "Câmera instantânea perfeita para registrar momentos especiais e imprimir fotos na hora.",
     "emoji": "📸",
     "destaque": true
   },
   {
+    "id": 2,
+    "nome": "Instax Mini 8",
+    "categoria": "Câmeras",
+    "descricao": "Câmera instantânea charmosa e prática para criar lembranças únicas.",
+    "emoji": "📸",
+    "destaque": true
+  },
+  {
+    "id": 3,
+    "nome": "Câmera Digital Mirage",
+    "categoria": "Câmeras",
+    "descricao": "Câmera compacta para fotos e vídeos com visual moderno e fácil de usar.",
+    "emoji": "📷",
+    "destaque": true
+  },
+  {
+    "id": 4,
+    "nome": "Filme Instax Mini",
+    "categoria": "Filmes",
+    "descricao": "Filme instantâneo compatível com câmeras Instax Mini.",
+    "emoji": "🎞️",
+    "destaque": true
+  },
+  {
+    "id": 5,
+    "nome": "Filme Fotográfico 35mm",
+    "categoria": "Filmes",
+    "descricao": "Filme analógico tradicional para câmeras 35mm.",
+    "emoji": "🎞️",
+    "destaque": true
+  },
+  {
     "id": 6,
-    "nome": "Polaroid Now+ Generation 2",
-    "categoria": "Câmeras Instantâneas",
-    "descricao": "Câmera Polaroid moderna com 5 modos de lente via app. Formato i-Type, estilo vintage retrô.",
-    "emoji": "🌈",
+    "nome": "Chaveiro Filme Personalizado",
+    "categoria": "Personalizados",
+    "descricao": "Chaveiro em formato de filme analógico com fotos personalizadas.",
+    "emoji": "🎬",
     "destaque": true
   },
   {
     "id": 7,
-    "nome": "Álbum de Fotos 10x15 (200 fotos)",
-    "categoria": "Acessórios",
-    "descricao": "Álbum clássico com capacidade para 200 fotos no formato 10x15. Capa dura e páginas de papel vegetal.",
-    "emoji": "📚",
-    "destaque": false
+    "nome": "Chaveiro Personalizado com Música",
+    "categoria": "Personalizados",
+    "descricao": "Chaveiro com fotos personalizadas e opção de adicionar música via Spotify.",
+    "emoji": "🎬",
+    "destaque": true
   },
   {
     "id": 8,
-    "nome": "Relógio Casio Vintage A168W",
-    "categoria": "Relógios",
-    "descricao": "Ícone do estilo retrô dos anos 80. Display digital com iluminação e pulseira de aço.",
-    "emoji": "⌚",
-    "destaque": false
+    "nome": "Caneca Personalizada",
+    "categoria": "Personalizados",
+    "descricao": "Caneca personalizada com foto, frase ou arte especial.",
+    "emoji": "🎁",
+    "destaque": true
   },
   {
     "id": 9,
-    "nome": "Kit Presente Fotografia Analógica",
-    "categoria": "Presentes",
-    "descricao": "Kit especial com 1 câmera descartável, 1 filme 35mm e revelação inclusa. O presente perfeito.",
+    "nome": "Caneca Mágica Personalizada",
+    "categoria": "Personalizados",
+    "descricao": "Caneca que revela a imagem personalizada ao receber líquido quente.",
     "emoji": "🎁",
     "destaque": true
   },
   {
     "id": 10,
-    "nome": "Câmera Canon EOS Rebel SL3",
-    "categoria": "Câmeras Digitais",
-    "descricao": "DSLR compacta com sensor de 24.1MP e vídeo 4K. Ideal para quem está começando na fotografia.",
-    "emoji": "📷",
-    "destaque": false
+    "nome": "Almofada Personalizada",
+    "categoria": "Personalizados",
+    "descricao": "Almofada personalizada com foto ou mensagem especial para presentear.",
+    "emoji": "🎁",
+    "destaque": true
   },
   {
     "id": 11,
-    "nome": "Filtro UV 58mm",
-    "categoria": "Acessórios",
-    "descricao": "Filtro UV para proteção da lente. Reduz névoa e clareia o céu. Compatível com lentes de 58mm.",
-    "emoji": "🔭",
-    "destaque": false
+    "nome": "Porta-Retrato Personalizado",
+    "categoria": "Quadros",
+    "descricao": "Porta-retrato para eternizar fotos e momentos especiais.",
+    "emoji": "🖼️",
+    "destaque": true
   },
   {
     "id": 12,
-    "nome": "Tripé Compacto Joby GorillaPod",
-    "categoria": "Acessórios",
-    "descricao": "Tripé flexível com pernas articuladas que se adaptam a qualquer superfície. Suporta até 1kg.",
-    "emoji": "🦒",
+    "nome": "Quadro Decorativo",
+    "categoria": "Quadros",
+    "descricao": "Quadro decorativo para fotos, lembranças e presentes especiais.",
+    "emoji": "🖼️",
     "destaque": false
+  },
+  {
+    "id": 13,
+    "nome": "Quadro de Vidro",
+    "categoria": "Quadros",
+    "descricao": "Quadro de vidro elegante para fotos e decoração.",
+    "emoji": "🖼️",
+    "destaque": false
+  },
+  {
+    "id": 14,
+    "nome": "Relógio Feminino",
+    "categoria": "Relógios",
+    "descricao": "Relógio feminino elegante, ideal para presentear em datas especiais.",
+    "emoji": "⌚",
+    "destaque": true
+  },
+  {
+    "id": 15,
+    "nome": "Relógio Champion",
+    "categoria": "Relógios",
+    "descricao": "Relógio Champion com design sofisticado e acabamento premium.",
+    "emoji": "⌚",
+    "destaque": true
+  },
+  {
+    "id": 16,
+    "nome": "Relógio Condor",
+    "categoria": "Relógios",
+    "descricao": "Relógio Condor moderno e elegante para todos os momentos.",
+    "emoji": "⌚",
+    "destaque": true
+  },
+  {
+    "id": 17,
+    "nome": "Kit Relógio Feminino",
+    "categoria": "Relógios",
+    "descricao": "Kit presente com relógio e acessórios, ideal para surpreender.",
+    "emoji": "⌚",
+    "destaque": true
+  },
+  {
+    "id": 18,
+    "nome": "Smartwatch Mormaii Life",
+    "categoria": "Relógios",
+    "descricao": "Smartwatch moderno com design esportivo e funções inteligentes.",
+    "emoji": "⌚",
+    "destaque": true
+  },
+  {
+    "id": 19,
+    "nome": "Kit Dia dos Namorados",
+    "categoria": "Kits",
+    "descricao": "Kit especial com produtos personalizados para presentear quem você ama.",
+    "emoji": "🎁",
+    "destaque": true
+  },
+  {
+    "id": 20,
+    "nome": "Cesta de Presente Personalizada",
+    "categoria": "Kits",
+    "descricao": "Cesta personalizada com opções de câmera, filme, quadro, almofada e outros presentes.",
+    "emoji": "🎁",
+    "destaque": true
   }
 ]

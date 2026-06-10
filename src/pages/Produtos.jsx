@@ -9,7 +9,7 @@ const categorias = ['Todos', ...new Set(produtos.map(p => p.categoria))];
 const emojiColors = {
   '📷': '#D4822A', '🎞️': '#5A6B52', '🎬': '#8B2E2E',
   '📸': '#3D2F25', '🌈': '#8B6543', '📚': '#D4822A',
-  '⌚': '#1A1410', '🎁': '#B36920', '🔭': '#5A6B52', '🦒': '#8B6543',
+  '⌚': '#1A1410', '🎁': '#B36920', '🖼️': '#5A6B52', '🔭': '#5A6B52',
 };
 
 export default function Produtos() {
@@ -17,10 +17,14 @@ export default function Produtos() {
   const [busca, setBusca]     = useState('');
   const [soDestaque, setSoDestaque] = useState(false);
 
+  const termoBusca = busca.trim().toLowerCase();
+
   const filtrados = produtos.filter(p => {
     const matchCat = cat === 'Todos' || p.categoria === cat;
-    const matchBusca = p.nome.toLowerCase().includes(busca.toLowerCase()) ||
-                       p.categoria.toLowerCase().includes(busca.toLowerCase());
+    const matchBusca = !termoBusca ||
+                       p.nome.toLowerCase().includes(termoBusca) ||
+                       p.categoria.toLowerCase().includes(termoBusca) ||
+                       p.descricao.toLowerCase().includes(termoBusca);
     const matchDest = !soDestaque || p.destaque;
     return matchCat && matchBusca && matchDest;
   });
@@ -55,9 +59,11 @@ export default function Produtos() {
             <div className="produtos__cats">
               {categorias.map(c => (
                 <button
+                  type="button"
                   key={c}
                   className={`cat-btn${cat === c ? ' cat-btn--active' : ''}`}
                   onClick={() => setCat(c)}
+                  aria-pressed={cat === c}
                 >
                   {c}
                 </button>
@@ -66,8 +72,10 @@ export default function Produtos() {
 
             {/* Destaque toggle */}
             <button
+              type="button"
               className={`destaque-toggle${soDestaque ? ' destaque-toggle--active' : ''}`}
               onClick={() => setSoDestaque(v => !v)}
+              aria-pressed={soDestaque}
             >
               <SlidersHorizontal size={15} />
               Destaques
@@ -84,6 +92,7 @@ export default function Produtos() {
               <span>🔍</span>
               <p>Nenhum produto encontrado. Tente outra busca ou consulte pelo WhatsApp.</p>
               <button
+                type="button"
                 className="btn btn-whatsapp"
                 onClick={() => openWhatsAppProduct('produto não encontrado na busca')}
               >
@@ -94,7 +103,11 @@ export default function Produtos() {
           ) : (
             <div className="produtos__grid">
               {filtrados.map(p => (
-                <div key={p.id} className={`produto-card${p.destaque ? ' produto-card--destaque' : ''}`}>
+                <div
+                  key={p.id}
+                  className={`produto-card${p.destaque ? ' produto-card--destaque' : ''}`}
+                  style={{ '--produto-cor': emojiColors[p.emoji] || '#8B6543' }}
+                >
                   {p.destaque && <span className="produto-card__badge">Destaque</span>}
 
                   <div
@@ -111,6 +124,7 @@ export default function Produtos() {
                   </div>
 
                   <button
+                    type="button"
                     className="btn btn-whatsapp produto-card__btn"
                     onClick={() => openWhatsAppProduct(p.nome)}
                   >
@@ -134,6 +148,7 @@ export default function Produtos() {
             Fale com a gente! Temos muito mais no estoque e podemos ajudá-lo a encontrar o produto ideal.
           </p>
           <button
+            type="button"
             className="btn btn-whatsapp"
             onClick={() => openWhatsAppProduct('produto específico')}
             style={{ margin: '0 auto' }}

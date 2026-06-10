@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { openWhatsApp } from '../hooks/useWhatsApp';
 import logo from '../assets/img foto ferrara.png';
@@ -16,14 +16,10 @@ const navLinks = [
 export default function Header() {
   const [open, setOpen]         = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location                = useLocation();
-
-  useEffect(() => {
-    setOpen(false);
-  }, [location]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 48);
+    onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -84,6 +80,7 @@ export default function Header() {
               key={to}
               to={to}
               end={to === '/'}
+              onClick={() => setOpen(false)}
               className={({ isActive }) =>
                 `header__drawer-link${isActive ? ' header__drawer-link--active' : ''}`
               }
