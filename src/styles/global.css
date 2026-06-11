@@ -33,6 +33,10 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
+body.menu-open {
+  overflow: hidden;
+  touch-action: none;
+}
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
 button { cursor: pointer; border: none; background: none; font-family: inherit; }

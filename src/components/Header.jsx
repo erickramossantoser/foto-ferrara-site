@@ -24,8 +24,13 @@ export default function Header() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.classList.toggle('menu-open', open);
+    return () => document.body.classList.remove('menu-open');
+  }, [open]);
+
   return (
-    <header className={`header${scrolled ? ' header--scrolled' : ''}`}>
+    <header className={`header${scrolled ? ' header--scrolled' : ''}${open ? ' header--menu-open' : ''}`}>
       <div className="container header__inner">
         {/* Logo */}
         <Link to="/" className="header__logo">
@@ -67,6 +72,8 @@ export default function Header() {
           className="header__hamburger"
           onClick={() => setOpen(v => !v)}
           aria-label="Menu"
+          aria-expanded={open}
+          type="button"
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -91,6 +98,7 @@ export default function Header() {
           <button
             className="btn btn-whatsapp"
             onClick={() => openWhatsApp()}
+            type="button"
             style={{ marginTop: '.5rem', justifyContent: 'center' }}
           >
             Fale no WhatsApp

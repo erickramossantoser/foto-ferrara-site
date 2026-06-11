@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 100;
+  z-index: 1000;
   transition: var(--transition);
   background: transparent;
   padding: 1.25rem 0;
@@ -14,11 +14,19 @@
   box-shadow: var(--shadow-sm);
   padding: .9rem 0;
 }
+.header--menu-open {
+  background: var(--warm-white);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: .9rem 0;
+}
 
 .header__inner {
   display: flex;
   align-items: center;
   gap: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 /* Logo */
@@ -75,6 +83,11 @@
 .header:not(.header--scrolled) .header__hamburger {
   color: #fff;
 }
+.header.header--menu-open .header__logo-name,
+.header.header--menu-open .header__logo-tag,
+.header.header--menu-open .header__hamburger {
+  color: var(--ink);
+}
 .header__link {
   font-size: .9rem;
   font-weight: 400;
@@ -122,10 +135,13 @@
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: var(--warm-white);
-  padding: 5rem 1.5rem 2rem;
+  padding: 6rem 1.5rem 2rem;
   transform: translateX(100%);
   transition: transform .3s ease;
-  z-index: 99;
+  z-index: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  min-height: 100dvh;
 }
 .header__drawer--open { transform: translateX(0); }
 .header__drawer-nav {
