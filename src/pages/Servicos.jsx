@@ -138,7 +138,7 @@ export default function Servicos() {
             <p className="section-label" style={{ marginBottom: 0 }}>Horário de funcionamento</p>
           </div>
           <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', marginBottom: '.75rem' }}>
-            Segunda a Sexta: 9h às 18h &nbsp;·&nbsp; Sábado: 9h às 14h
+            Segunda a Sexta: 9h às 19h &nbsp;·&nbsp; Sábado: 10h às 16h
           </h3>
           <p style={{ color: 'var(--ink-light)', fontSize: '.95rem' }}>
             Rua Dom José de Barros, 65 · República · São Paulo, SP

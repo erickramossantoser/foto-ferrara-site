@@ -18,7 +18,7 @@ const infos = [
   {
     icon: <Clock size={22} strokeWidth={1.5} />,
     titulo: 'Horário de funcionamento',
-    linhas: ['Segunda a Sexta: 9h às 18h', 'Sábado: 9h às 14h', 'Domingo: Fechado'],
+    linhas: ['Segunda a Sexta: 9h às 19h', 'Sábado: 10h às 16h', 'Domingo: Fechado'],
   },
   {
     icon: <Camera size={22} strokeWidth={1.5} />,

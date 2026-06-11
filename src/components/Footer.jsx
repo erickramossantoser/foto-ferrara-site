@@ -61,7 +61,7 @@ export default function Footer() {
               </li>
               <li>
                 <Clock size={15} />
-                <span>Seg–Sex: 9h às 18h<br />Sáb: 9h às 14h</span>
+                <span>Seg–Sex: 9h às 19h<br />Sáb: 10h às 16h</span>
               </li>
             </ul>
           </div>
