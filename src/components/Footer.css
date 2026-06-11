@@ -110,8 +110,6 @@ a.footer__link:hover { color: #fff; }
   flex-wrap: wrap;
   gap: .5rem;
 }
-.footer__credit span { color: var(--amber); }
-
 @media (max-width: 900px) {
   .footer__grid {
     grid-template-columns: 1fr 1fr;

@@ -69,9 +69,6 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p>© {year} Foto Ferrara. Todos os direitos reservados.</p>
-          <p className="footer__credit">
-            Desenvolvido com ♥ por <span>Dev Portfólio</span>
-          </p>
         </div>
       </div>
     </footer>
