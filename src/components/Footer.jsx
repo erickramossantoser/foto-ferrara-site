@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import { Camera, MapPin, Phone, Clock } from 'lucide-react';
+import { MapPin, Phone, Clock } from 'lucide-react';
 import { openWhatsApp } from '../hooks/useWhatsApp';
+import footerLogo from '../assets/logo-foto-ferrara-1999-crop.png';
 import './Footer.css';
 
 export default function Footer() {
@@ -14,7 +15,9 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer__brand">
             <div className="footer__logo">
-              <div className="footer__logo-icon"><Camera size={18} /></div>
+              <div className="footer__logo-icon">
+                <img src={footerLogo} alt="" />
+              </div>
               <div>
                 <p className="footer__logo-name">Foto Ferrara</p>
                 <p className="footer__logo-tag">desde 1999</p>

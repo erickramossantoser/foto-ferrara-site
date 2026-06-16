@@ -90,19 +90,19 @@ const depoimentos = [
 
 const instagramPosts = [
   {
-    imagem: '/servicos/revelacao-fotos.webp',
-    tag: 'Revelação',
-    texto: 'Fotos impressas com acabamento profissional para guardar, presentear e reviver.',
+    imagem: '/instagram/dia-dos-namorados-ideias.jpg',
+    tag: 'Post recente',
+    texto: '5 ideias de presentes para surpreender quem você ama.',
   },
   {
-    imagem: '/servicos/revelacao-filmes.webp',
-    tag: 'Filme 35mm',
-    texto: 'Revelação de filmes analógicos com digitalização para compartilhar seus cliques.',
-  },
-  {
-    imagem: '/servicos/produtos-presentes.webp',
+    imagem: '/instagram/dia-dos-namorados-presentes.jpg',
     tag: 'Presentes',
-    texto: 'Álbuns, porta-retratos, canecas e produtos fotográficos para ocasiões especiais.',
+    texto: 'Opções especiais para transformar momentos em lembranças.',
+  },
+  {
+    imagem: '/instagram/canecas-personalizadas.jpg',
+    tag: 'Canecas',
+    texto: 'Canecas personalizadas feitas na hora para presentear com carinho.',
   },
 ];
 
@@ -288,7 +288,7 @@ export default function Home() {
             <p className="section-label">Instagram</p>
             <h2 className="section-title">Acompanhe a Foto Ferrara</h2>
             <p className="section-body">
-              Veja novidades, produtos e bastidores da loja pelo nosso perfil oficial.
+              Veja nossos posts recentes, novidades e produtos pelo perfil oficial.
             </p>
           </div>
 
