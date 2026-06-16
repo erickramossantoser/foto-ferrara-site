@@ -1,8 +1,18 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Clock } from 'lucide-react';
+import { MapPin, Phone, Clock, Mail } from 'lucide-react';
 import { openWhatsApp } from '../hooks/useWhatsApp';
 import footerLogo from '../assets/logo-foto-ferrara-1999-crop.png';
 import './Footer.css';
+
+function InstagramIcon({ size = 15 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+      <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="17.25" cy="6.75" r="1.2" fill="currentColor" />
+    </svg>
+  );
+}
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -65,6 +75,18 @@ export default function Footer() {
               <li>
                 <Clock size={15} />
                 <span>Seg–Sex: 9h às 19h<br />Sáb: 10h às 16h</span>
+              </li>
+              <li>
+                <Mail size={15} />
+                <a className="footer__contact-link" href="mailto:fotoferrara@hotmail.com">
+                  fotoferrara@hotmail.com
+                </a>
+              </li>
+              <li>
+                <InstagramIcon size={15} />
+                <a className="footer__contact-link" href="https://www.instagram.com/fotoferrara/" target="_blank" rel="noreferrer">
+                  @fotoferrara
+                </a>
               </li>
             </ul>
           </div>

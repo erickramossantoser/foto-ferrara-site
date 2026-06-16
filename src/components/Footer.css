@@ -104,7 +104,12 @@ a.footer__link:hover { color: #fff; }
   font-family: inherit;
   font-size: inherit;
 }
-.footer__phone:hover { color: var(--amber); }
+.footer__contact-link {
+  color: rgba(255,255,255,.6);
+  transition: color .2s;
+}
+.footer__phone:hover,
+.footer__contact-link:hover { color: var(--amber); }
 
 /* Bottom */
 .footer__bottom {

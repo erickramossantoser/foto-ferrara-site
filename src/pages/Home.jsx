@@ -1,5 +1,17 @@
 import { Link } from 'react-router-dom';
-import { MessageCircle, ChevronRight, Aperture, Film, Camera, Gift, Star, ArrowRight, ExternalLink } from 'lucide-react';
+import {
+  MessageCircle,
+  ChevronRight,
+  Aperture,
+  Film,
+  Camera,
+  Gift,
+  Star,
+  ArrowRight,
+  ExternalLink,
+  MapPin,
+  Clock,
+} from 'lucide-react';
 import { openWhatsApp } from '../hooks/useWhatsApp';
 import logoFerrara from '../assets/logo-foto-ferrara-1999-crop.png';
 import './Home.css';
@@ -9,14 +21,7 @@ const instagramUrl = 'https://www.instagram.com/fotoferrara/';
 
 function InstagramIcon({ size = 18 }) {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      aria-hidden="true"
-      focusable="false"
-    >
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
       <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.8" />
       <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.8" />
       <circle cx="17.25" cy="6.75" r="1.2" fill="currentColor" />
@@ -24,34 +29,25 @@ function InstagramIcon({ size = 18 }) {
   );
 }
 
-const destaques = [
+const servicosPrincipais = [
   {
-    icon: <Aperture size={28} strokeWidth={1.5} />,
+    icon: <Aperture size={26} strokeWidth={1.5} />,
     titulo: 'Revelação de Fotos',
     desc: 'Fotos 10x15 e ampliações com qualidade profissional. Prontas em apenas 1 hora.',
     to: '/servicos',
     tag: 'mais pedido',
   },
   {
-    icon: <Film size={28} strokeWidth={1.5} />,
+    icon: <Film size={26} strokeWidth={1.5} />,
     titulo: 'Filmes Analógicos',
-    desc: 'Revelação de filmes 35mm coloridos e P&B. Digitalização inclusa.',
+    desc: 'Revelação de filmes 35mm coloridos e P&B com digitalização.',
     to: '/servicos',
-    tag: '',
   },
   {
-    icon: <Camera size={28} strokeWidth={1.5} />,
+    icon: <Camera size={26} strokeWidth={1.5} />,
     titulo: 'Câmeras e Acessórios',
-    desc: 'Grande variedade de câmeras digitais, analógicas e instantâneas.',
+    desc: 'Câmeras digitais, analógicas, instantâneas e itens para fotografia.',
     to: '/produtos',
-    tag: '',
-  },
-  {
-    icon: <Gift size={28} strokeWidth={1.5} />,
-    titulo: 'Presentes Especiais',
-    desc: 'Polaroid, relógios, kits fotográficos e muito mais para presentear.',
-    to: '/produtos',
-    tag: '',
   },
 ];
 
@@ -109,22 +105,21 @@ const instagramPosts = [
 export default function Home() {
   return (
     <div className="home">
-      {/* ── Hero ─────────────────────────────────────────── */}
       <section className="hero">
         <div className="hero__bg">
-          <div className="hero__bg-film" />
-          <div className="hero__bg-vignette" />
+          <div className="hero__grain" />
+          <div className="hero__red-glow" />
         </div>
+
         <div className="container hero__content">
           <div className="hero__copy">
-            <p className="section-label fade-up">Foto Ferrara · São Paulo</p>
+            <p className="section-label fade-up">Foto Ferrara</p>
             <h1 className="hero__title fade-up fade-up-1">
-              Construa histórias<br />
-              <em>com memórias</em>
+              Fotografia, tradição e memórias desde 1999
             </h1>
             <p className="hero__subtitle fade-up fade-up-2">
-              Revelação de fotos, filmes analógicos e câmeras no coração de São Paulo.
-              Mais de 27 anos preservando momentos que não têm preço.
+              Revelação de fotos, filmes analógicos, câmeras, relógios e presentes
+              personalizados no coração de São Paulo.
             </p>
             <div className="hero__actions fade-up fade-up-3">
               <button
@@ -140,70 +135,88 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Stats strip */}
             <div className="hero__stats fade-up fade-up-4">
-              {[['27', 'Anos de história'], ['50k+', 'Fotos reveladas'], ['⭐ 4.1', 'Avaliação no Google']].map(([n, l]) => (
-                <div key={l} className="hero__stat">
-                  <strong>{n}</strong>
-                  <span>{l}</span>
-                </div>
-              ))}
+              <div className="hero__stat">
+                <strong>27</strong>
+                <span>Anos de história</span>
+              </div>
+              <div className="hero__stat">
+                <strong>50k+</strong>
+                <span>Fotos reveladas</span>
+              </div>
+              <div className="hero__stat">
+                <strong>4.1</strong>
+                <span>Avaliação no Google</span>
+              </div>
             </div>
           </div>
 
-          <div className="hero__brand fade-up fade-up-2">
-            <div className="hero__brand-card">
+          <div className="hero__visual fade-up fade-up-2" aria-label="Composição visual inspirada no cartão Foto Ferrara">
+            <div className="hero__film-strip hero__film-strip--top" />
+            <div className="hero__brand-lockup">
               <img src={logoFerrara} alt="Logo Foto Ferrara desde 1999" />
             </div>
+            <div className="hero__camera-scene">
+              <div className="hero__camera">
+                <Camera size={64} strokeWidth={1.2} />
+              </div>
+              <div className="hero__photo hero__photo--one">
+                <img src="/servicos/revelacao-fotos.webp" alt="" />
+              </div>
+              <div className="hero__photo hero__photo--two">
+                <img src="/servicos/revelacao-filmes.webp" alt="" />
+              </div>
+              <div className="hero__watch">
+                <Clock size={28} />
+              </div>
+            </div>
+            <div className="hero__film-strip hero__film-strip--bottom" />
           </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="hero__scroll">
-          <div className="hero__scroll-line" />
-          <span>role para baixo</span>
         </div>
       </section>
 
-      {/* ── Destaques ────────────────────────────────────── */}
-      <section className="section destaques">
+      <section className="section home-services">
         <div className="container">
           <div className="section-header centered">
-            <p className="section-label">O que fazemos</p>
-            <h2 className="section-title">Nossos serviços e produtos</h2>
+            <p className="section-label">Nossos principais serviços</p>
+            <h2 className="section-title">Da revelação ao analógico moderno</h2>
             <p className="section-body">
-              Da revelação tradicional ao analógico moderno — tudo que você precisa
-              para registrar e guardar seus momentos especiais.
+              Alguns dos atendimentos mais procurados na loja, com mais opções disponíveis
+              na página de serviços.
             </p>
           </div>
 
-          <div className="destaques__grid">
-            {destaques.map((d) => (
-              <Link to={d.to} key={d.titulo} className="destaque-card">
-                {d.tag && <span className="destaque-card__tag">{d.tag}</span>}
-                <div className="destaque-card__icon">{d.icon}</div>
-                <h3 className="destaque-card__title">{d.titulo}</h3>
-                <p className="destaque-card__desc">{d.desc}</p>
-                <span className="destaque-card__cta">
-                  Saiba mais <ArrowRight size={14} />
-                </span>
+          <div className="home-services__grid">
+            {servicosPrincipais.map((servico) => (
+              <Link to={servico.to} key={servico.titulo} className="service-card">
+                {servico.tag && <span className="service-card__tag">{servico.tag}</span>}
+                <div className="service-card__icon">{servico.icon}</div>
+                <h3>{servico.titulo}</h3>
+                <p>{servico.desc}</p>
+                <span>Ver detalhes <ArrowRight size={14} /></span>
               </Link>
             ))}
+          </div>
+
+          <div className="home-section-action">
+            <Link to="/servicos" className="btn btn-primary">
+              Visualizar todos os serviços
+              <ChevronRight size={18} />
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* ── Banner analógico ──────────────────────────────── */}
       <section className="analog-banner">
         <div className="analog-banner__pattern" />
         <div className="container analog-banner__inner">
           <div className="analog-banner__text">
-            <p className="section-label" style={{ color: 'var(--sepia-light)' }}>Para os apaixonados por analógico</p>
+            <p className="section-label">Para os apaixonados por analógico</p>
             <h2 className="analog-banner__title">
               Revelação de filmes<br />
               <em>com digitalização inclusa</em>
             </h2>
-            <p style={{ color: 'rgba(255,255,255,.7)', fontSize: '1rem', lineHeight: 1.7, maxWidth: '42ch' }}>
+            <p>
               Revelamos filmes 35mm coloridos e preto e branco. Você recebe seus negativos
               e os arquivos digitais prontos para compartilhar.
             </p>
@@ -216,14 +229,34 @@ export default function Home() {
               <MessageCircle size={18} />
               Consultar pelo WhatsApp
             </button>
-            <Link to="/servicos" className="btn" style={{ color: 'rgba(255,255,255,.75)', border: '1.5px solid rgba(255,255,255,.2)' }}>
+            <Link to="/servicos" className="btn analog-banner__link">
               Ver todos os serviços
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Google Business */}
+      <section className="section tradition-section">
+        <div className="container tradition-section__inner">
+          <div className="tradition-section__mark">
+            <Film size={42} />
+            <strong>1999</strong>
+          </div>
+          <div>
+            <p className="section-label">Tradição desde 1999</p>
+            <h2 className="section-title">Uma loja reconhecida por quem vive fotografia no centro de São Paulo</h2>
+            <p className="section-body">
+              A Foto Ferrara preserva a memória de milhares de clientes com atendimento
+              próximo, revelação fotográfica e produtos que acompanham momentos especiais.
+            </p>
+            <Link to="/sobre" className="btn btn-outline tradition-section__btn">
+              Conheça nossa história
+              <ChevronRight size={18} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="section google-business">
         <div className="container google-business__inner">
           <div className="google-business__score" aria-label="Avaliação 4.1 no Google">
@@ -243,22 +276,16 @@ export default function Home() {
             <h2 className="section-title">Confira a Foto Ferrara no Google</h2>
             <p className="section-body">
               Veja avaliações, rota, telefone e informações atualizadas do nosso perfil comercial
-              antes de visitar a loja no centro de São Paulo.
+              antes de visitar a loja.
             </p>
           </div>
-          <a
-            className="btn btn-primary google-business__btn"
-            href={googleBusinessUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a className="btn btn-primary google-business__btn" href={googleBusinessUrl} target="_blank" rel="noreferrer">
             Ver no Google
             <ExternalLink size={17} />
           </a>
         </div>
       </section>
 
-      {/* ── Depoimentos ──────────────────────────────────── */}
       <section className="section">
         <div className="container">
           <div className="section-header centered">
@@ -274,14 +301,13 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="depoimento-card__text">"{d.texto}"</p>
-                <p className="depoimento-card__nome">— {d.nome}</p>
+                <p className="depoimento-card__nome">- {d.nome}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Instagram */}
       <section className="section instagram-feed">
         <div className="container">
           <div className="section-header centered">
@@ -294,13 +320,7 @@ export default function Home() {
 
           <div className="instagram-feed__grid">
             {instagramPosts.map((post) => (
-              <a
-                key={post.tag}
-                className="instagram-card"
-                href={instagramUrl}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a key={post.tag} className="instagram-card" href={instagramUrl} target="_blank" rel="noreferrer">
                 <img src={post.imagem} alt="" loading="lazy" />
                 <div className="instagram-card__overlay">
                   <span>{post.tag}</span>
@@ -319,27 +339,39 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── CTA Final ────────────────────────────────────── */}
-      <section className="cta-section">
-        <div className="container cta-section__inner">
-          <h2 className="cta-section__title">
-            Pronto para revelar<br />suas memórias?
-          </h2>
-          <p className="cta-section__sub">
-            Venha nos visitar ou fale pelo WhatsApp. Estamos no centro de São Paulo,
-            de segunda a sábado.
-          </p>
-          <div className="hero__actions" style={{ justifyContent: 'center' }}>
+      <section className="section visit-section">
+        <div className="container visit-section__inner">
+          <div className="visit-section__content">
+            <p className="section-label">Visite nossa loja</p>
+            <h2 className="section-title">Estamos na Rua Dom José de Barros, 65</h2>
+            <p className="section-body">
+              República, São Paulo - SP. Venha nos visitar ou fale pelo WhatsApp
+              para consultar serviços, produtos e prazos.
+            </p>
+            <div className="visit-section__info">
+              <span><MapPin size={16} /> Centro de São Paulo</span>
+              <span><Clock size={16} /> Seg-Sex: 9h às 19h · Sáb: 10h às 16h</span>
+            </div>
             <button
-              className="btn btn-primary"
-              onClick={() => openWhatsApp()}
+              className="btn btn-whatsapp"
+              onClick={() => openWhatsApp('Olá! Gostaria de visitar ou falar com a Foto Ferrara.')}
             >
               <MessageCircle size={18} />
-              Falar no WhatsApp
+              Entrar em contato
             </button>
-            <Link to="/contato" className="btn btn-outline">
-              Ver endereço e horários
-            </Link>
+          </div>
+
+          <div className="visit-section__map">
+            <iframe
+              title="Localização Foto Ferrara"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.081!2d-46.6466!3d-23.5452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5832f64e!2sR.+Dom+Jos%C3%A9+de+Barros%2C+65+-+Rep%C3%BAblica%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </section>
