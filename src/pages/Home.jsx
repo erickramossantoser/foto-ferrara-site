@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MessageCircle, ChevronRight, Aperture, Film, Camera, Gift, Star, ArrowRight, ExternalLink } from 'lucide-react';
 import { openWhatsApp } from '../hooks/useWhatsApp';
+import logoFerrara from '../assets/logo-foto-ferrara-1999-crop.png';
 import './Home.css';
 
 const googleBusinessUrl = 'https://www.google.com/maps/search/?api=1&query=Foto%20Ferrara%20Rua%20Dom%20Jos%C3%A9%20de%20Barros%2065%20Rep%C3%BAblica%20S%C3%A3o%20Paulo';
@@ -115,37 +116,45 @@ export default function Home() {
           <div className="hero__bg-vignette" />
         </div>
         <div className="container hero__content">
-          <p className="section-label fade-up">Foto Ferrara · São Paulo</p>
-          <h1 className="hero__title fade-up fade-up-1">
-            Construa histórias<br />
-            <em>com memórias</em>
-          </h1>
-          <p className="hero__subtitle fade-up fade-up-2">
-            Revelação de fotos, filmes analógicos e câmeras no coração de São Paulo.
-            Mais de 27 anos preservando momentos que não têm preço.
-          </p>
-          <div className="hero__actions fade-up fade-up-3">
-            <button
-              className="btn btn-whatsapp"
-              onClick={() => openWhatsApp('Olá! Gostaria de saber mais sobre os serviços da Foto Ferrara.')}
-            >
-              <MessageCircle size={18} />
-              Fale no WhatsApp
-            </button>
-            <Link to="/servicos" className="btn btn-outline">
-              Conheça nossos serviços
-              <ChevronRight size={18} />
-            </Link>
+          <div className="hero__copy">
+            <p className="section-label fade-up">Foto Ferrara · São Paulo</p>
+            <h1 className="hero__title fade-up fade-up-1">
+              Construa histórias<br />
+              <em>com memórias</em>
+            </h1>
+            <p className="hero__subtitle fade-up fade-up-2">
+              Revelação de fotos, filmes analógicos e câmeras no coração de São Paulo.
+              Mais de 27 anos preservando momentos que não têm preço.
+            </p>
+            <div className="hero__actions fade-up fade-up-3">
+              <button
+                className="btn btn-whatsapp"
+                onClick={() => openWhatsApp('Olá! Gostaria de saber mais sobre os serviços da Foto Ferrara.')}
+              >
+                <MessageCircle size={18} />
+                Fale no WhatsApp
+              </button>
+              <Link to="/servicos" className="btn btn-outline hero__services-btn">
+                Conheça nossos serviços
+                <ChevronRight size={18} />
+              </Link>
+            </div>
+
+            {/* Stats strip */}
+            <div className="hero__stats fade-up fade-up-4">
+              {[['27', 'Anos de história'], ['50k+', 'Fotos reveladas'], ['⭐ 4.1', 'Avaliação no Google']].map(([n, l]) => (
+                <div key={l} className="hero__stat">
+                  <strong>{n}</strong>
+                  <span>{l}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Stats strip */}
-          <div className="hero__stats fade-up fade-up-4">
-            {[['27', 'Anos de história'], ['50k+', 'Fotos reveladas'], ['⭐ 4.1', 'Avaliação no Google']].map(([n, l]) => (
-              <div key={l} className="hero__stat">
-                <strong>{n}</strong>
-                <span>{l}</span>
-              </div>
-            ))}
+          <div className="hero__brand fade-up fade-up-2">
+            <div className="hero__brand-card">
+              <img src={logoFerrara} alt="Logo Foto Ferrara desde 1999" />
+            </div>
           </div>
         </div>
 
@@ -302,7 +311,7 @@ export default function Home() {
           </div>
 
           <div className="instagram-feed__action">
-            <a className="btn btn-outline" href={instagramUrl} target="_blank" rel="noreferrer">
+            <a className="btn instagram-feed__btn" href={instagramUrl} target="_blank" rel="noreferrer">
               <InstagramIcon size={18} />
               Ver @fotoferrara
             </a>
