@@ -309,36 +309,31 @@
 
 .tradition-section {
   background: var(--cream);
-  padding-top: 5.5rem;
+  padding: 3rem 0;
 }
 
 .tradition-section__inner {
-  display: grid;
-  grid-template-columns: 190px minmax(0, 1fr);
-  gap: 3rem;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.tradition-section__mark {
-  min-height: 190px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  color: var(--amber);
-  background: var(--ink);
-  box-shadow: var(--shadow-lg);
+.tradition-section__inner > div {
+  flex: 1;
 }
 
-.tradition-section__mark strong {
-  display: block;
-  color: #fff;
-  font-family: var(--font-display);
-  font-size: 2.2rem;
-  margin-top: -2.3rem;
+.tradition-section__inner .section-label {
+  font-size: 1rem;
+}
+
+.tradition-section__inner .section-body {
+  font-size: 1.25rem;
 }
 
 .tradition-section__btn {
-  margin-top: 1.5rem;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .google-business {
@@ -561,6 +556,10 @@
   box-shadow: 0 24px 60px rgba(0,0,0,.3);
 }
 
+.text-gold {
+  color: var(--sepia-light);
+}
+
 @media (max-width: 1024px) {
   .hero__content,
   .visit-section__inner {
@@ -588,12 +587,8 @@
   }
 
   .tradition-section__inner {
-    grid-template-columns: 1fr;
-  }
-
-  .tradition-section__mark {
-    width: 170px;
-    min-height: 170px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 

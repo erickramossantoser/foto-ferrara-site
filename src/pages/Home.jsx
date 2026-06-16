@@ -115,7 +115,7 @@ export default function Home() {
           <div className="hero__copy">
             <p className="section-label fade-up">Foto Ferrara</p>
             <h1 className="hero__title fade-up fade-up-1">
-              Fotografia, tradição e memórias desde 1999
+              Construa histórias com <span className="text-gold">memórias</span>
             </h1>
             <p className="hero__subtitle fade-up fade-up-2">
               Revelação de fotos, filmes analógicos, câmeras, relógios e presentes
@@ -224,22 +224,15 @@ export default function Home() {
 
       <section className="section tradition-section">
         <div className="container tradition-section__inner">
-          <div className="tradition-section__mark">
-            <Film size={42} />
-            <strong>1999</strong>
-          </div>
           <div>
             <p className="section-label">Tradição desde 1999</p>
-            <h2 className="section-title">Uma loja reconhecida por quem vive fotografia no centro de São Paulo</h2>
             <p className="section-body">
-              A Foto Ferrara preserva a memória de milhares de clientes com atendimento
-              próximo, revelação fotográfica e produtos que acompanham momentos especiais.
+              A Foto Ferrara preserva a memória de milhares de clientes com atendimento próximo, revelação fotográfica e produtos que acompanham momentos especiais.
             </p>
-            <Link to="/sobre" className="btn btn-outline tradition-section__btn">
-              Conheça nossa história
-              <ChevronRight size={18} />
-            </Link>
           </div>
+          <Link to="/sobre" className="btn btn-primary tradition-section__btn">
+            Nossa história
+          </Link>
         </div>
       </section>
 
