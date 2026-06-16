@@ -36,18 +36,33 @@ const destaques = [
 
 const depoimentos = [
   {
-    nome: 'Mariana Costa',
-    texto: 'Revelo meus filmes analógicos aqui há anos. Qualidade impecável e atendimento super atencioso.',
+    nome: 'Vagner Roberto Silva',
+    texto: 'Uns dos poucos locais no Centro de São Paulo que revela filmes antigos e fotos digitais. Atendimento super especial e rápido. Recomendo.',
     nota: 5,
   },
   {
-    nome: 'Rafael Andrade',
-    texto: 'Comprei minha primeira câmera Fujifilm aqui. Me orientaram muito bem e o preço foi ótimo.',
+    nome: 'ALINE LIMA LINE',
+    texto: 'Super recomendo a Foto Ferrara! O atendimento foi impecável do início ao fim. Os produtos foram entregues conforme o combinado, com muita qualidade.',
     nota: 5,
   },
   {
-    nome: 'Júlia Mendes',
-    texto: 'Revelei o álbum do casamento na Foto Ferrara. As fotos ficaram lindas, emocionei muito!',
+    nome: 'Rosi Ramos',
+    texto: 'Revelei fotos lá. Atendimento rápido e cordial. Tem diversos itens que podemos presentear e faz fotos na hora para documentos.',
+    nota: 5,
+  },
+  {
+    nome: 'Alice Marques',
+    texto: 'Ótimo atendimento! Recebi as melhores dicas do Renato sobre câmeras analógicas.',
+    nota: 5,
+  },
+  {
+    nome: 'Birulinha Gege',
+    texto: 'O local oferece um serviço de revelação de filmes com alto padrão técnico e de qualidade. Entregou trabalho em alta qualidade e muito rápido.',
+    nota: 5,
+  },
+  {
+    nome: 'Daniel Bernardo',
+    texto: 'Ótimo atendimento e preços justos! Consertei minhas câmeras por lá, ficaram muito boas.',
     nota: 5,
   },
 ];
@@ -69,7 +84,7 @@ export default function Home() {
           </h1>
           <p className="hero__subtitle fade-up fade-up-2">
             Revelação de fotos, filmes analógicos e câmeras no coração de São Paulo.
-            Mais de 26 anos preservando momentos que não têm preço.
+            Mais de 27 anos preservando momentos que não têm preço.
           </p>
           <div className="hero__actions fade-up fade-up-3">
             <button
@@ -87,7 +102,7 @@ export default function Home() {
 
           {/* Stats strip */}
           <div className="hero__stats fade-up fade-up-4">
-            {[['26', 'Anos de história'], ['50k+', 'Fotos reveladas'], ['⭐ 4.1', 'Avaliação no Google']].map(([n, l]) => (
+            {[['27', 'Anos de história'], ['50k+', 'Fotos reveladas'], ['⭐ 4.1', 'Avaliação no Google']].map(([n, l]) => (
               <div key={l} className="hero__stat">
                 <strong>{n}</strong>
                 <span>{l}</span>

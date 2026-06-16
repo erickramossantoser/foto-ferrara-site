@@ -39,7 +39,7 @@ export default function Header() {
           </div>
           <div className="header__logo-text">
             <span className="header__logo-name">Foto Ferrara</span>
-            <span className="header__logo-tag">desde 2000</span>
+            <span className="header__logo-tag">desde 1999</span>
           </div>
         </Link>
 

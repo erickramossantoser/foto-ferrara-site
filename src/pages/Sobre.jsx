@@ -2,18 +2,18 @@ import { Heart, Award, MapPin, Users } from 'lucide-react';
 import './Sobre.css';
 
 const valores = [
-  { icon: <Heart size={22} strokeWidth={1.5} />, titulo: 'Tradição familiar', desc: 'Negócio passado de geração em geração, preservando o amor pela fotografia.' },
+  { icon: <Heart size={22} strokeWidth={1.5} />, titulo: 'Tradição familiar', desc: 'Uma loja feita com cuidado, memória e amor pela fotografia desde o primeiro dia.' },
   { icon: <Award size={22} strokeWidth={1.5} />, titulo: 'Qualidade garantida', desc: 'Equipamentos modernos e profissionais para resultados que emocionam.' },
   { icon: <MapPin size={22} strokeWidth={1.5} />, titulo: 'No coração de SP', desc: 'Localizada no centro histórico, acessível a toda a cidade.' },
   { icon: <Users size={22} strokeWidth={1.5} />, titulo: 'Atendimento humano', desc: 'Equipe apaixonada por fotografia, pronta para tirar todas as suas dúvidas.' },
 ];
 
 const linha_do_tempo = [
-  { ano: '2000', evento: 'Fundação da Foto Ferrara pelo Sr. Renato Ferrara, na Rua Dom José de Barros.' },
-  { ano: '2005', evento: 'Expansão do espaço físico e início da venda de câmeras fotográficas.' },
-  { ano: '2010', evento: 'Adaptação à era digital: revelação digital, scanners e impressão de qualidade.' },
-  { ano: '2018', evento: 'Retorno ao analógico: revelação de filmes volta a crescer entre jovens.' },
-  { ano: 'Hoje', evento: 'Referência em revelação analógica e digital no centro de São Paulo.' },
+  { ano: '1999', evento: 'Fundação da Foto Ferrara na Rua Dom José de Barros, no centro de São Paulo.' },
+  { ano: '2005', evento: 'Ampliação do atendimento e do mix de produtos fotográficos.' },
+  { ano: '2010', evento: 'Adaptação à era digital, com revelação digital, scanners e impressão de qualidade.' },
+  { ano: '2018', evento: 'Fortalecimento da revelação de filmes com o retorno do interesse pelo analógico.' },
+  { ano: 'Hoje', evento: 'Referência em revelação analógica, fotos digitais e produtos fotográficos no centro de São Paulo.' },
 ];
 
 export default function Sobre() {
@@ -36,32 +36,27 @@ export default function Sobre() {
           <div className="sobre__historia-text">
             <div className="ornament"><div className="ornament-dot" /></div>
             <p className="section-label">Nossa história</p>
-            <h2 className="section-title">Mais de 26 anos<br />revelando memórias</h2>
+            <h2 className="section-title">Mais de 27 anos<br />revelando memórias</h2>
             <p className="section-body" style={{ marginBottom: '1.25rem' }}>
-              A Foto Ferrara nasceu em 2000, quando o Sr. Renato Ferrara abriu as portas
+              A Foto Ferrara nasceu em 1999, quando o Sr. Renato Ferrara abriu as portas
               de uma pequena loja no coração de São Paulo, movido por sua paixão pela fotografia.
               O que começou como um pequeno laboratório de revelação tornou-se uma referência
               para fotógrafos amadores e profissionais de toda a cidade.
             </p>
             <p className="section-body">
-              Hoje, gerenciada pelos filhos e netos do fundador, a Foto Ferrara mantém os
-              valores que sempre guiaram a família: qualidade, atenção e amor genuíno pela
-              imagem fotográfica. Vivemos o renascimento do analógico com a mesma emoção
+              Hoje, a Foto Ferrara mantém os valores que sempre guiaram a loja: qualidade,
+              atenção e amor genuíno pela imagem fotográfica. Vivemos o renascimento do analógico com a mesma emoção
               de quando abrimos as portas pela primeira vez.
             </p>
 
             <div className="sobre__badges">
               <div className="sobre__badge">
-                <strong>+26</strong>
+                <strong>+27</strong>
                 <span>anos de história</span>
               </div>
               <div className="sobre__badge">
                 <strong>+50k</strong>
                 <span>fotos reveladas</span>
-              </div>
-              <div className="sobre__badge">
-                <strong>3ª</strong>
-                <span>geração na família</span>
               </div>
             </div>
           </div>
@@ -76,7 +71,7 @@ export default function Sobre() {
               </div>
               <div className="sobre__film-frame">
                 <span className="sobre__film-label">FOTO FERRARA</span>
-                <span className="sobre__film-year">EST. 2000 · SÃO PAULO</span>
+                <span className="sobre__film-year">EST. 1999 · SÃO PAULO</span>
                 <div className="sobre__film-icon">📷</div>
                 <p className="sobre__film-quote italic">
                   "Cada foto é um instante de eternidade."

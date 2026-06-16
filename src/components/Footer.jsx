@@ -17,11 +17,11 @@ export default function Footer() {
               <div className="footer__logo-icon"><Camera size={18} /></div>
               <div>
                 <p className="footer__logo-name">Foto Ferrara</p>
-                <p className="footer__logo-tag">desde 2000</p>
+                <p className="footer__logo-tag">desde 1999</p>
               </div>
             </div>
             <p className="footer__tagline">
-              Revelamos memórias há mais de 26 anos no coração de São Paulo.
+              Revelamos memórias há mais de 27 anos no coração de São Paulo.
             </p>
           </div>
 
