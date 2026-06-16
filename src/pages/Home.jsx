@@ -1,7 +1,27 @@
 import { Link } from 'react-router-dom';
-import { MessageCircle, ChevronRight, Aperture, Film, Camera, Gift, Star, ArrowRight } from 'lucide-react';
+import { MessageCircle, ChevronRight, Aperture, Film, Camera, Gift, Star, ArrowRight, ExternalLink } from 'lucide-react';
 import { openWhatsApp } from '../hooks/useWhatsApp';
 import './Home.css';
+
+const googleBusinessUrl = 'https://www.google.com/maps/search/?api=1&query=Foto%20Ferrara%20Rua%20Dom%20Jos%C3%A9%20de%20Barros%2065%20Rep%C3%BAblica%20S%C3%A3o%20Paulo';
+const instagramUrl = 'https://www.instagram.com/fotoferrara/';
+
+function InstagramIcon({ size = 18 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="17.25" cy="6.75" r="1.2" fill="currentColor" />
+    </svg>
+  );
+}
 
 const destaques = [
   {
@@ -64,6 +84,24 @@ const depoimentos = [
     nome: 'Daniel Bernardo',
     texto: 'Ótimo atendimento e preços justos! Consertei minhas câmeras por lá, ficaram muito boas.',
     nota: 5,
+  },
+];
+
+const instagramPosts = [
+  {
+    imagem: '/servicos/revelacao-fotos.webp',
+    tag: 'Revelação',
+    texto: 'Fotos impressas com acabamento profissional para guardar, presentear e reviver.',
+  },
+  {
+    imagem: '/servicos/revelacao-filmes.webp',
+    tag: 'Filme 35mm',
+    texto: 'Revelação de filmes analógicos com digitalização para compartilhar seus cliques.',
+  },
+  {
+    imagem: '/servicos/produtos-presentes.webp',
+    tag: 'Presentes',
+    texto: 'Álbuns, porta-retratos, canecas e produtos fotográficos para ocasiões especiais.',
   },
 ];
 
@@ -176,6 +214,41 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Google Business */}
+      <section className="section google-business">
+        <div className="container google-business__inner">
+          <div className="google-business__score" aria-label="Avaliação 4.1 no Google">
+            <span className="google-business__logo">G</span>
+            <div>
+              <strong>4.1</strong>
+              <div className="google-business__stars">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} size={16} fill={i < 4 ? 'var(--amber)' : 'none'} color="var(--amber)" />
+                ))}
+              </div>
+              <span>75 avaliações no Google</span>
+            </div>
+          </div>
+          <div className="google-business__content">
+            <p className="section-label">Google Business</p>
+            <h2 className="section-title">Confira a Foto Ferrara no Google</h2>
+            <p className="section-body">
+              Veja avaliações, rota, telefone e informações atualizadas do nosso perfil comercial
+              antes de visitar a loja no centro de São Paulo.
+            </p>
+          </div>
+          <a
+            className="btn btn-primary google-business__btn"
+            href={googleBusinessUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver no Google
+            <ExternalLink size={17} />
+          </a>
+        </div>
+      </section>
+
       {/* ── Depoimentos ──────────────────────────────────── */}
       <section className="section">
         <div className="container">
@@ -195,6 +268,44 @@ export default function Home() {
                 <p className="depoimento-card__nome">— {d.nome}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Instagram */}
+      <section className="section instagram-feed">
+        <div className="container">
+          <div className="section-header centered">
+            <p className="section-label">Instagram</p>
+            <h2 className="section-title">Acompanhe a Foto Ferrara</h2>
+            <p className="section-body">
+              Veja novidades, produtos e bastidores da loja pelo nosso perfil oficial.
+            </p>
+          </div>
+
+          <div className="instagram-feed__grid">
+            {instagramPosts.map((post) => (
+              <a
+                key={post.tag}
+                className="instagram-card"
+                href={instagramUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={post.imagem} alt="" loading="lazy" />
+                <div className="instagram-card__overlay">
+                  <span>{post.tag}</span>
+                  <p>{post.texto}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="instagram-feed__action">
+            <a className="btn btn-outline" href={instagramUrl} target="_blank" rel="noreferrer">
+              <InstagramIcon size={18} />
+              Ver @fotoferrara
+            </a>
           </div>
         </div>
       </section>

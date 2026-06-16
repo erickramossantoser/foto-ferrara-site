@@ -47,6 +47,7 @@
   line-height: 1.55;
 }
 .info-card__action {
+  display: inline-flex;
   font-size: .82rem;
   color: var(--amber);
   font-weight: 500;
@@ -54,6 +55,7 @@
   margin-top: .4rem;
   font-family: inherit;
   transition: color .2s;
+  text-decoration: none;
 }
 .info-card__action:hover { color: var(--amber-dark); }
 

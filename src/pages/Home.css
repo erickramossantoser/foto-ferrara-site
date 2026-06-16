@@ -261,6 +261,71 @@
   flex-shrink: 0;
 }
 
+/* ── Google Business ──────────────────────────────────────── */
+.google-business {
+  background: var(--warm-white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.google-business__inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 2rem;
+}
+
+.google-business__score {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 220px;
+  box-shadow: var(--shadow-sm);
+}
+
+.google-business__logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font: 700 1.7rem/1 Arial, sans-serif;
+  color: #4285F4;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+}
+
+.google-business__score strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.google-business__stars {
+  display: flex;
+  gap: .12rem;
+  margin: .35rem 0 .25rem;
+}
+
+.google-business__score span:last-child {
+  font-size: .78rem;
+  color: var(--sepia);
+}
+
+.google-business__content .section-title {
+  margin: .35rem 0 .7rem;
+}
+
+.google-business__btn {
+  white-space: nowrap;
+}
+
 /* ── Depoimentos ──────────────────────────────────────────── */
 .depoimentos__grid {
   display: grid;
@@ -292,6 +357,69 @@
   font-weight: 500;
 }
 
+/* ── Instagram ────────────────────────────────────────────── */
+.instagram-feed {
+  background: var(--warm-white);
+  border-top: 1px solid var(--border);
+}
+
+.instagram-feed__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.instagram-card {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  display: block;
+  color: #fff;
+  background: var(--ink);
+  box-shadow: var(--shadow-sm);
+}
+
+.instagram-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease;
+}
+
+.instagram-card:hover img {
+  transform: scale(1.05);
+}
+
+.instagram-card__overlay {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 1.25rem;
+  background: linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,0));
+}
+
+.instagram-card__overlay span {
+  display: inline-flex;
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--sepia-light);
+  margin-bottom: .45rem;
+}
+
+.instagram-card__overlay p {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  line-height: 1.45;
+  max-width: 28ch;
+}
+
+.instagram-feed__action {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 /* ── CTA Final ──────────────────────────────────────────── */
 .cta-section {
   background: var(--cream);
@@ -315,9 +443,12 @@
 /* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .destaques__grid { grid-template-columns: repeat(2, 1fr); }
+  .google-business__inner { grid-template-columns: 1fr; }
+  .google-business__btn { justify-self: start; }
 }
 @media (max-width: 768px) {
   .depoimentos__grid { grid-template-columns: 1fr; }
+  .instagram-feed__grid { grid-template-columns: 1fr; }
   .hero__scroll { display: none; }
   .analog-banner__actions { width: 100%; }
   .analog-banner__actions .btn { text-align: center; justify-content: center; }
@@ -325,4 +456,5 @@
 @media (max-width: 560px) {
   .destaques__grid { grid-template-columns: 1fr; }
   .hero__stats { gap: 1.5rem; }
+  .google-business__score { align-items: flex-start; min-width: 0; }
 }
