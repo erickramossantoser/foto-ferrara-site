@@ -13,7 +13,7 @@ import {
   Clock,
 } from 'lucide-react';
 import { openWhatsApp } from '../hooks/useWhatsApp';
-import logoFerrara from '../assets/logo-foto-ferrara-1999-crop.png';
+import heroCartaoFerrara from '../assets/hero-cartao-foto-ferrara.png';
 import './Home.css';
 
 const googleBusinessUrl = 'https://www.google.com/maps/search/?api=1&query=Foto%20Ferrara%20Rua%20Dom%20Jos%C3%A9%20de%20Barros%2065%20Rep%C3%BAblica%20S%C3%A3o%20Paulo';
@@ -151,26 +151,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero__visual fade-up fade-up-2" aria-label="Composição visual inspirada no cartão Foto Ferrara">
-            <div className="hero__film-strip hero__film-strip--top" />
-            <div className="hero__brand-lockup">
-              <img src={logoFerrara} alt="Logo Foto Ferrara desde 1999" />
-            </div>
-            <div className="hero__camera-scene">
-              <div className="hero__camera">
-                <Camera size={64} strokeWidth={1.2} />
-              </div>
-              <div className="hero__photo hero__photo--one">
-                <img src="/servicos/revelacao-fotos.webp" alt="" />
-              </div>
-              <div className="hero__photo hero__photo--two">
-                <img src="/servicos/revelacao-filmes.webp" alt="" />
-              </div>
-              <div className="hero__watch">
-                <Clock size={28} />
-              </div>
-            </div>
-            <div className="hero__film-strip hero__film-strip--bottom" />
+          <div className="hero__visual fade-up fade-up-2" aria-label="Cartão visual Foto Ferrara com filme, fotos e logotipo">
+            <img
+              className="hero__store-card"
+              src={heroCartaoFerrara}
+              alt="Cartão visual da Foto Ferrara com filme fotográfico, fotos e logotipo"
+            />
           </div>
         </div>
       </section>
