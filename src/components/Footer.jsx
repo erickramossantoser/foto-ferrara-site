@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Clock, Mail } from 'lucide-react';
 import { openWhatsApp } from '../hooks/useWhatsApp';
-import footerLogo from '../assets/logo-foto-ferrara-1999-crop.png';
+import cartaoFotos from '../assets/hero-cartao-foto-ferrara.png';
 import './Footer.css';
 
 function InstagramIcon({ size = 15 }) {
@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="footer__brand">
             <div className="footer__logo">
               <div className="footer__logo-icon">
-                <img src={footerLogo} alt="" />
+                <img src={cartaoFotos} alt="" />
               </div>
               <div>
                 <p className="footer__logo-name">Foto Ferrara</p>

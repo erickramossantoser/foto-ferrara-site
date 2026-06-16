@@ -28,14 +28,16 @@
   margin-bottom: 1rem;
 }
 .footer__logo-icon {
-  width: 104px;
-  height: 56px;
-  border-radius: 10px;
+  width: 140px;
+  height: 100px;
+  border-radius: 16px;
   overflow: hidden;
-  background: #fff;
-  border: 1px solid rgba(214,190,130,.2);
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.06), rgba(255,255,255,.02)),
+    linear-gradient(135deg, rgba(0,0,0,.72), rgba(72,20,18,.68));
+  border: 1px solid rgba(214,190,130,.24);
   flex-shrink: 0;
-  padding: .3rem;
+  padding: .5rem;
 }
 .footer__logo-icon img {
   width: 100%;
