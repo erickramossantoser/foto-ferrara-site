@@ -33,14 +33,18 @@
 .header__logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  width: 168px;
-  height: 50px;
-  padding: .25rem .55rem;
-  border-radius: 10px;
-  background: rgba(255,255,255,.96);
-  border: 1px solid rgba(199,157,77,.22);
-  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  width: 140px;
+  height: 100px;
+  padding: .5rem;
+  border-radius: 16px;
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.06), rgba(255,255,255,.02)),
+    linear-gradient(135deg, rgba(0,0,0,.72), rgba(72,20,18,.68));
+  border: 1px solid rgba(214,190,130,.24);
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
 }
 .header__logo-image {
   width: 100%;

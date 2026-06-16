@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { openWhatsApp } from '../hooks/useWhatsApp';
-import logo from '../assets/logo-foto-ferrara-1999-crop.png';
+import cartaoFotos from '../assets/hero-cartao-foto-ferrara.png';
 import './Header.css';
 
 const navLinks = [
@@ -34,7 +34,7 @@ export default function Header() {
       <div className="container header__inner">
         {/* Logo */}
         <Link to="/" className="header__logo">
-          <img className="header__logo-image" src={logo} alt="Foto Ferrara - desde 1999" />
+          <img className="header__logo-image" src={cartaoFotos} alt="Foto Ferrara - desde 1999" />
         </Link>
 
         {/* Desktop nav */}
