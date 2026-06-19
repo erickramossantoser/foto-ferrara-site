@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Servicos from './pages/Servicos';
 import Produtos from './pages/Produtos';
+import ProdutoDetalhe from './pages/ProdutoDetalhe';
 import Contato from './pages/Contato';
 import './styles/global.css';
 import './pages/Home.css';
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/sobre"    element={<Sobre />} />
           <Route path="/servicos" element={<Servicos />} />
           <Route path="/produtos" element={<Produtos />} />
+          <Route path="/produtos/:id" element={<ProdutoDetalhe />} />
           <Route path="/contato"  element={<Contato />} />
           <Route path="*"         element={<Home />} />
         </Routes>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { MessageCircle, Search, SlidersHorizontal } from 'lucide-react';
 import { openWhatsAppProduct } from '../hooks/useWhatsApp';
 import produtos from '../data/produtos.json';
@@ -108,6 +109,12 @@ export default function Produtos() {
                   className={`produto-card${p.destaque ? ' produto-card--destaque' : ''}`}
                   style={{ '--produto-cor': emojiColors[p.emoji] || '#8B6543' }}
                 >
+                  <Link
+                    to={`/produtos/${p.id}`}
+                    className="produto-card__overlay"
+                    aria-label={`Ver detalhes de ${p.nome}`}
+                  />
+
                   <div className="produto-card__media">
                     {p.imagem && (
                       <img
@@ -135,7 +142,10 @@ export default function Produtos() {
                   <button
                     type="button"
                     className="btn btn-whatsapp produto-card__btn"
-                    onClick={() => openWhatsAppProduct(p.nome)}
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      openWhatsAppProduct(p.nome);
+                    }}
                   >
                     <MessageCircle size={15} />
                     Consultar no WhatsApp

@@ -81,15 +81,6 @@
     "destaque": true
   },
   {
-    "id": 10,
-    "nome": "Almofada Personalizada",
-    "categoria": "Personalizados",
-    "descricao": "Almofada personalizada com foto ou mensagem especial para presentear.",
-    "emoji": "🎁",
-    "imagem": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80",
-    "destaque": true
-  },
-  {
     "id": 11,
     "nome": "Porta-Retrato Personalizado",
     "categoria": "Quadros",
@@ -117,42 +108,6 @@
     "destaque": false
   },
   {
-    "id": 14,
-    "nome": "Relógio Feminino",
-    "categoria": "Relógios",
-    "descricao": "Relógio feminino elegante, ideal para presentear em datas especiais.",
-    "emoji": "⌚",
-    "imagem": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
-    "destaque": true
-  },
-  {
-    "id": 15,
-    "nome": "Relógio Champion",
-    "categoria": "Relógios",
-    "descricao": "Relógio Champion com design sofisticado e acabamento premium.",
-    "emoji": "⌚",
-    "imagem": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
-    "destaque": true
-  },
-  {
-    "id": 16,
-    "nome": "Relógio Condor",
-    "categoria": "Relógios",
-    "descricao": "Relógio Condor moderno e elegante para todos os momentos.",
-    "emoji": "⌚",
-    "imagem": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
-    "destaque": true
-  },
-  {
-    "id": 17,
-    "nome": "Kit Relógio Feminino",
-    "categoria": "Relógios",
-    "descricao": "Kit presente com relógio e acessórios, ideal para surpreender.",
-    "emoji": "⌚",
-    "imagem": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
-    "destaque": true
-  },
-  {
     "id": 18,
     "nome": "Smartwatch Mormaii Life",
     "categoria": "Relógios",
@@ -162,21 +117,438 @@
     "destaque": true
   },
   {
-    "id": 19,
-    "nome": "Kit Dia dos Namorados",
-    "categoria": "Kits",
-    "descricao": "Kit especial com produtos personalizados para presentear quem você ama.",
-    "emoji": "🎁",
-    "imagem": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=900&q=80",
+    "id": 21,
+    "nome": "Relógio Citizen TZ30802E",
+    "categoria": "Relógios",
+    "descricao": "Relógio masculino Citizen cronógrafo bicolor com acabamento sofisticado.",
+    "emoji": "⌚",
+    "imagem": "/produtos/citizen-tz30802e-foto-loja.webp",
+    "detalhes": [
+      "Modelo Citizen TZ30802E.",
+      "Relógio cronógrafo bicolor.",
+      "Visual masculino com acabamento sofisticado.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
     "destaque": true
   },
   {
-    "id": 20,
-    "nome": "Cesta de Presente Personalizada",
-    "categoria": "Kits",
-    "descricao": "Cesta personalizada com opções de câmera, filme, quadro, almofada e outros presentes.",
-    "emoji": "🎁",
-    "imagem": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=900&q=80",
+    "id": 22,
+    "nome": "Champion Smartwatch C066 CH50066Z",
+    "categoria": "Relógios",
+    "descricao": "Smartwatch Champion com visual moderno para uso diário e ocasiões especiais.",
+    "emoji": "⌚",
+    "imagem": "/produtos/champion-smartwatch-c066-ch50066z.jpg",
+    "detalhes": [
+      "Modelo Champion Smartwatch C066 CH50066Z.",
+      "Design moderno com proposta inteligente.",
+      "Boa opção para quem procura praticidade no dia a dia.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 23,
+    "nome": "Relógio Technos WT2060AF/1A",
+    "categoria": "Relógios",
+    "descricao": "Relógio Technos masculino Skydiver com acabamento bicolor e presença marcante.",
+    "emoji": "⌚",
+    "imagem": "/produtos/technos-wt2060af-1a.jpg",
+    "detalhes": [
+      "Modelo Technos WT2060AF/1A.",
+      "Linha Skydiver com visual robusto.",
+      "Acabamento bicolor para uso casual ou social.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 24,
+    "nome": "Relógio Citizen TZ31730F",
+    "categoria": "Relógios",
+    "descricao": "Relógio Citizen masculino com visual elegante e acabamento para o dia a dia.",
+    "emoji": "⌚",
+    "imagem": "/produtos/citizen-tz31730f.jpg",
+    "detalhes": [
+      "Modelo Citizen TZ31730F.",
+      "Design masculino com acabamento elegante.",
+      "Produto da linha de relógios Citizen.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 25,
+    "nome": "Bulova Millennia Depthmeter",
+    "categoria": "Relógios",
+    "descricao": "Relógio Bulova Millennia Depthmeter com visual marcante e acabamento sofisticado.",
+    "emoji": "⌚",
+    "imagem": "/produtos/bulova-millennia-depthmeter-foto-loja.jpg",
+    "detalhes": [
+      "Modelo Bulova Millennia Depthmeter.",
+      "Visual marcante com presença sofisticada.",
+      "Opção indicada para uso social e presente especial.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 26,
+    "nome": "Relógio Magnum MA33835W",
+    "categoria": "Relógios",
+    "descricao": "Relógio Magnum masculino com visual premium e acabamento elegante.",
+    "emoji": "⌚",
+    "imagem": "/produtos/magnum-ma33835-foto-loja.jpg",
+    "detalhes": [
+      "Modelo Magnum MA33835W.",
+      "Visual masculino com acabamento premium.",
+      "Produto para quem procura presença e estilo.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 27,
+    "nome": "Relógio Oslo OMBSSS9U0002",
+    "categoria": "Relógios",
+    "descricao": "Relógio Oslo com design limpo, elegante e fácil de combinar.",
+    "emoji": "⌚",
+    "imagem": "/produtos/oslo-ombsss9u0002-foto-loja.jpg",
+    "detalhes": [
+      "Modelo Oslo OMBSSS9U0002.",
+      "Design elegante para uso diário.",
+      "Visual discreto com acabamento refinado.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 28,
+    "nome": "Relógio Citizen TZ31463F",
+    "categoria": "Relógios",
+    "descricao": "Relógio Citizen masculino com acabamento moderno e leitura elegante.",
+    "emoji": "⌚",
+    "imagem": "/produtos/citizen-tz31463f-foto-loja.png",
+    "detalhes": [
+      "Modelo Citizen TZ31463F.",
+      "Acabamento moderno com visual masculino.",
+      "Boa escolha para presente ou uso pessoal.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 29,
+    "nome": "Relógio Citizen TZ31507A",
+    "categoria": "Relógios",
+    "descricao": "Relógio Citizen masculino com estilo cronógrafo e acabamento sofisticado.",
+    "emoji": "⌚",
+    "imagem": "/produtos/citizen-tz31507a-foto-loja.jpg",
+    "detalhes": [
+      "Modelo Citizen TZ31507A.",
+      "Visual masculino com proposta cronógrafo.",
+      "Acabamento sofisticado para diferentes ocasiões.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 30,
+    "nome": "Relógio Oslo OMBSCCVD0001",
+    "categoria": "Relógios",
+    "descricao": "Relógio Oslo com visual contemporâneo e acabamento marcante.",
+    "emoji": "⌚",
+    "imagem": "/produtos/oslo-ombsccvd0001-foto-loja.jpg",
+    "detalhes": [
+      "Modelo Oslo OMBSCCVD0001.",
+      "Design contemporâneo com presença visual.",
+      "Opção versátil para o dia a dia.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 31,
+    "nome": "Relógio Orient F49SS026NH",
+    "categoria": "Relógios",
+    "descricao": "Relógio Orient automático com visual esportivo e acabamento robusto.",
+    "emoji": "⌚",
+    "imagem": "/produtos/orient-f49ss026nh.jpg",
+    "detalhes": [
+      "Modelo Orient F49SS026NH.",
+      "Relógio automático com visual esportivo.",
+      "Acabamento robusto para quem gosta de presença no pulso.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 32,
+    "nome": "Relógio Magnum MA35075A",
+    "categoria": "Relógios",
+    "descricao": "Relógio Magnum com acabamento elegante e visual masculino moderno.",
+    "emoji": "⌚",
+    "imagem": "/produtos/magnum-ma35075a.jpg",
+    "detalhes": [
+      "Modelo Magnum MA35075A.",
+      "Visual masculino com acabamento moderno.",
+      "Produto em destaque para presente e uso pessoal.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 33,
+    "nome": "Relógio Orient Heritage YN6TT004",
+    "categoria": "Relógios",
+    "descricao": "Relógio Orient Heritage automático com inspiração clássica.",
+    "emoji": "⌚",
+    "imagem": "/produtos/orient-heritage-yn6tt004-foto-loja.jpg",
+    "detalhes": [
+      "Modelo Orient Heritage YN6TT004.",
+      "Relógio automático com inspiração clássica.",
+      "Visual de tradição para quem aprecia relógios Orient.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 34,
+    "nome": "Relógio Citizen JP2007-17W Aqualand",
+    "categoria": "Relógios",
+    "descricao": "Relógio Citizen Aqualand com visual esportivo e forte presença.",
+    "emoji": "⌚",
+    "imagem": "/produtos/citizen-jp2007-17w-aqualand.jpg",
+    "detalhes": [
+      "Modelo Citizen JP2007-17W Aqualand.",
+      "Linha Aqualand com visual esportivo.",
+      "Produto para quem procura um relógio de presença.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 35,
+    "nome": "Relógio Citizen AN3612-09P",
+    "categoria": "Relógios",
+    "descricao": "Relógio Citizen com pulseira em couro e visual clássico.",
+    "emoji": "⌚",
+    "imagem": "/produtos/citizen-an3612-09p-foto-loja.webp",
+    "detalhes": [
+      "Modelo Citizen AN3612-09P.",
+      "Visual clássico com pulseira em couro.",
+      "Boa escolha para uso social e casual.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 36,
+    "nome": "Relógio Citizen BI5072-51E",
+    "categoria": "Relógios",
+    "descricao": "Relógio Citizen masculino em aço com visual versátil.",
+    "emoji": "⌚",
+    "imagem": "/produtos/citizen-bi5072-51e.jpg",
+    "detalhes": [
+      "Modelo Citizen BI5072-51E.",
+      "Pulseira em aço com visual versátil.",
+      "Opção elegante para o dia a dia.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 37,
+    "nome": "Relógio Orient 469SS076F S1SX",
+    "categoria": "Relógios",
+    "descricao": "Relógio Orient automático com visual clássico e acabamento em aço.",
+    "emoji": "⌚",
+    "imagem": "/produtos/orient-469ss076f-s1sx-foto-loja.jpg",
+    "detalhes": [
+      "Modelo Orient 469SS076F S1SX.",
+      "Relógio automático com acabamento em aço.",
+      "Visual clássico para colecionadores e uso diário.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 38,
+    "nome": "Relógio Orient 469ED1 S1KS Automático",
+    "categoria": "Relógios",
+    "descricao": "Relógio Orient automático com visual tradicional e acabamento elegante.",
+    "emoji": "⌚",
+    "imagem": "/produtos/orient-469ed1-s1ks-foto-loja.webp",
+    "detalhes": [
+      "Modelo Orient 469ED1 S1KS Automático.",
+      "Relógio automático com visual tradicional.",
+      "Acabamento elegante para uso social.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 39,
+    "nome": "Casio MTP-1302D-3AV",
+    "categoria": "Relógios",
+    "descricao": "Relógio Casio analógico com pulseira em aço e mostrador verde clássico.",
+    "emoji": "⌚",
+    "imagem": "/produtos/casio-mtp-1302d-3av.png",
+    "detalhes": [
+      "Modelo Casio MTP-1302D-3AV.",
+      "Visual analógico clássico com mostrador verde.",
+      "Pulseira em aço para uso casual ou social.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 40,
+    "nome": "Casio F-91W-1",
+    "categoria": "Relógios",
+    "descricao": "Relógio digital Casio F-91W-1, leve, clássico e prático para o dia a dia.",
+    "emoji": "⌚",
+    "imagem": "/produtos/casio-f-91w-1.png",
+    "detalhes": [
+      "Modelo Casio F-91W-1.",
+      "Relógio digital clássico da Casio.",
+      "Leve e versátil para uso diário.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 41,
+    "nome": "Casio W-96H-1AV",
+    "categoria": "Relógios",
+    "descricao": "Relógio digital Casio W-96H-1AV com visual esportivo e leitura prática.",
+    "emoji": "⌚",
+    "imagem": "/produtos/casio-w-96h-1av.png",
+    "detalhes": [
+      "Modelo Casio W-96H-1AV.",
+      "Design digital esportivo.",
+      "Opção prática para rotina e atividades do dia a dia.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 42,
+    "nome": "Casio AW-80-1AV",
+    "categoria": "Relógios",
+    "descricao": "Relógio Casio AW-80-1AV com combinação analógica e digital.",
+    "emoji": "⌚",
+    "imagem": "/produtos/casio-aw-80-1av.png",
+    "detalhes": [
+      "Modelo Casio AW-80-1AV.",
+      "Mostrador com leitura analógica e digital.",
+      "Visual funcional para quem gosta de praticidade.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 43,
+    "nome": "Casio AQ-230GA-9D",
+    "categoria": "Relógios",
+    "descricao": "Relógio Casio AQ-230GA-9D dourado com estilo vintage digital e analógico.",
+    "emoji": "⌚",
+    "imagem": "/produtos/casio-aq-230ga-9d.png",
+    "detalhes": [
+      "Modelo Casio AQ-230GA-9D.",
+      "Visual vintage com acabamento dourado.",
+      "Combina leitura analógica e digital.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 44,
+    "nome": "Casio A159WGEA-1",
+    "categoria": "Relógios",
+    "descricao": "Relógio digital Casio A159WGEA-1 com acabamento dourado e estilo retrô.",
+    "emoji": "⌚",
+    "imagem": "/produtos/casio-a159wgea-1.png",
+    "detalhes": [
+      "Modelo Casio A159WGEA-1.",
+      "Relógio digital com acabamento dourado.",
+      "Estilo retrô para uso casual ou presente.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 45,
+    "nome": "Casio MTP-V002G-1B",
+    "categoria": "Relógios",
+    "descricao": "Relógio Casio MTP-V002G-1B analógico dourado com visual elegante.",
+    "emoji": "⌚",
+    "imagem": "/produtos/casio-mtp-v002g-1b.jpg",
+    "detalhes": [
+      "Modelo Casio MTP-V002G-1B.",
+      "Relógio analógico com acabamento dourado.",
+      "Visual elegante para uso social e cotidiano.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 46,
+    "nome": "Casio F-91WS-2",
+    "categoria": "Relógios",
+    "descricao": "Relógio digital Casio F-91WS-2 com caixa translúcida azul.",
+    "emoji": "⌚",
+    "imagem": "/produtos/casio-f-91ws-2.png",
+    "detalhes": [
+      "Modelo Casio F-91WS-2.",
+      "Visual digital com caixa translúcida azul.",
+      "Opção leve, jovem e prática para o dia a dia.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 47,
+    "nome": "Casio F-91WB-2A1",
+    "categoria": "Relógios",
+    "descricao": "Relógio digital Casio F-91WB-2A1 com visual moderno em azul.",
+    "emoji": "⌚",
+    "imagem": "/produtos/casio-f-91wb-2a1.png",
+    "detalhes": [
+      "Modelo Casio F-91WB-2A1.",
+      "Relógio digital com visual moderno.",
+      "Boa opção para quem procura um Casio leve e diferente.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 48,
+    "nome": "Casio F-91WM-2A",
+    "categoria": "Relógios",
+    "descricao": "Relógio digital Casio F-91WM-2A com detalhe metalizado azul.",
+    "emoji": "⌚",
+    "imagem": "/produtos/casio-f-91wm-2a.png",
+    "detalhes": [
+      "Modelo Casio F-91WM-2A.",
+      "Digital clássico com detalhe metalizado azul.",
+      "Leve, discreto e fácil de combinar.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
+    "destaque": true
+  },
+  {
+    "id": 49,
+    "nome": "Casio F-105W-1A",
+    "categoria": "Relógios",
+    "descricao": "Relógio digital Casio F-105W-1A com visual clássico e uso versátil.",
+    "emoji": "⌚",
+    "imagem": "/produtos/casio-f-105w-1a.png",
+    "detalhes": [
+      "Modelo Casio F-105W-1A.",
+      "Relógio digital com design clássico.",
+      "Opção prática para rotina, presente ou coleção.",
+      "Consulte disponibilidade e valor pelo WhatsApp."
+    ],
     "destaque": true
   }
 ]
