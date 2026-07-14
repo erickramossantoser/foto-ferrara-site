@@ -63,8 +63,8 @@ const depoimentos = [
     nota: 5,
   },
   {
-    nome: 'Matheus Pereira',
-    texto: 'Muito bom! Atendimento de muita qualidade.',
+    nome: 'Guilherme Ribero',
+    texto: 'Indico de olhos fechados a loja, me atenderam super bem, muito prestativos, minha esposa amou o presente e ficou marcado em nossa história. Agradeço de coração o serviço prestado, nota 100000!',
     nota: 5,
   },
   {
