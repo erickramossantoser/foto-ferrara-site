@@ -53,33 +53,33 @@ const servicosPrincipais = [
 
 const depoimentos = [
   {
+    nome: 'Alê santos7',
+    texto: 'Perfeito, loja muito bonita e eficiente, sempre me salva quando eu preciso.',
+    nota: 5,
+  },
+  {
     nome: 'Vagner Roberto Silva',
     texto: 'Uns dos poucos locais no Centro de São Paulo que revela filmes antigos e fotos digitais. Atendimento super especial e rápido. Recomendo.',
     nota: 5,
   },
   {
-    nome: 'ALINE LIMA LINE',
-    texto: 'Super recomendo a Foto Ferrara! O atendimento foi impecável do início ao fim. Os produtos foram entregues conforme o combinado, com muita qualidade.',
+    nome: 'Matheus Pereira',
+    texto: 'Muito bom! Atendimento de muita qualidade.',
     nota: 5,
   },
   {
-    nome: 'Rosi Ramos',
-    texto: 'Revelei fotos lá. Atendimento rápido e cordial. Tem diversos itens que podemos presentear e faz fotos na hora para documentos.',
+    nome: 'Thais Pedroso',
+    texto: 'Excelente lugar, super confiável. Recomendo!',
     nota: 5,
   },
   {
-    nome: 'Alice Marques',
-    texto: 'Ótimo atendimento! Recebi as melhores dicas do Renato sobre câmeras analógicas.',
+    nome: 'Aline Karla',
+    texto: 'A loja tem tudo o que precisar sobre fotos, bem completa e equipada. Atendimento nota 10.',
     nota: 5,
   },
   {
-    nome: 'Birulinha Gege',
-    texto: 'O local oferece um serviço de revelação de filmes com alto padrão técnico e de qualidade. Entregou trabalho em alta qualidade e muito rápido.',
-    nota: 5,
-  },
-  {
-    nome: 'Daniel Bernardo',
-    texto: 'Ótimo atendimento e preços justos! Consertei minhas câmeras por lá, ficaram muito boas.',
+    nome: 'Ana Claudia Sousa Martins Burato',
+    texto: 'Loja com preços justos, serviço impecável e profissionais super competentes. Recomendo.',
     nota: 5,
   },
 ];
@@ -145,7 +145,7 @@ export default function Home() {
                 <span>Fotos reveladas</span>
               </div>
               <div className="hero__stat">
-                <strong>4.1</strong>
+                <strong>4.6</strong>
                 <span>Avaliação no Google</span>
               </div>
             </div>
@@ -238,16 +238,16 @@ export default function Home() {
 
       <section className="section google-business">
         <div className="container google-business__inner">
-          <div className="google-business__score" aria-label="Avaliação 4.1 no Google">
+          <div className="google-business__score" aria-label="Avaliação 4.6 no Google">
             <span className="google-business__logo">G</span>
             <div>
-              <strong>4.1</strong>
+              <strong>4.6</strong>
               <div className="google-business__stars">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={16} fill={i < 4 ? 'var(--amber)' : 'none'} color="var(--amber)" />
+                  <Star key={i} size={16} fill="var(--amber)" color="var(--amber)" />
                 ))}
               </div>
-              <span>75 avaliações no Google</span>
+              <span>Avaliações no Google</span>
             </div>
           </div>
           <div className="google-business__content">
